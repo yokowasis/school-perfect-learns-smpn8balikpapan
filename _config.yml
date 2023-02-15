@@ -1,4 +1,4 @@
-title: SMP Negeri 8 Kota Balikpapan
+title: SMP Negeri 8 Balikpapan
 author:
   name: smpn8balikpapan
   email: smpn8@smpn8balikpapan.sch.id
@@ -6,14 +6,13 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  SMPN 8 adalah sekolah Menengah Pertama manjadi sekolah penggerak 
-  dengan fasilitas memadai dan program unggulan, 
+  SMPN 8 adalah sekolah Menengah Pertama manjadi sekolah Adiwiyata Mandiri
+  dan Sekolah Penggerak, 
   dilengkapi dengan tenaga pendidik berpengalaman dan 
   metode pembelajaran inovatif.
 
 sambutan: >
-  Selamat datang di website MAN 2 Kota Bima, sekolah yang memiliki visi untuk mencetak 
-  siswa-siswi yang berprestasi, berakhlakul karimah, peduli lingkungan, berwawasan global yang dilandasi iman dan taqwa.
+  Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, berprestasi, berbudaya dan cinta lingkungan
   Kami sangat berkomitmen untuk memberikan pendidikan terbaik bagi para siswa kami dengan 
   fasilitas yang memadai dan tenaga pendidik yang berpengalaman. Kami percaya bahwa setiap 
   siswa memiliki potensi yang luar biasa dan kami akan terus bekerja keras untuk membantu mereka 
@@ -24,9 +23,9 @@ logo: /images/logo.png
 logofooter: /images/footer_logo.png
 icon: /images/kemenag.png
 
-alamat: Jl. Wolter Monginsidi No. 02, Kel. Sarae, Kec. Rasanae Barat, Kota Bima, NTB
-email: man2kotabima2@gmail.com
-phone: "(0374) 42374"
+alamat: Jl. Mulawarman Rt.54 No 14 Manggar Balikpapan Timur
+email: smpn8@smpn8balikpapan.sch.id
+phone: "(0542) 761902"
 
 menus:
   - title: Home
@@ -71,12 +70,12 @@ submenu:
     icon: /images/admission.png
 
 sliders:
-  - title: MAN 2 Kota Bima
+  - title: SMPN 8 Balikpapan
     text: Selamat Datang
     image: /gallery/man2kobi.jpeg
     link: /category/berita
     linktext: INFO TERBARU 
-  - title: MAN 2 Kota Bima
+  - title: SMPN 8 Balikpapan
     text: Selamat Datang
     image: /gallery/slider.jpg
     link: /category/berita
@@ -113,7 +112,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
 
-copyright: © copyright 2023 Bimasoft
+copyright: © copyright 2023 smpn8balikpapan
 
 # Theme-specific settings
 
