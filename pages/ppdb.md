@@ -7,7 +7,7 @@ layout: default
 Silakan Menggunakan **[https://s.id/smpn8bpn](https://s.id/smpn8bpn)** untuk melakukan pendaftaran
 
 
-Mengisi Biodata Login ke **[#](#)**
+Mengisi Biodata Login ke **[https://s.id/smpn8bpn](#)**
 
 **Contact Person / WA : 082xxxxxxxx**
 
