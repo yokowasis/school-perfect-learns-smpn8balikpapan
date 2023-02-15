@@ -44,20 +44,19 @@ menus:
   - title: PPDB
     link: /pages/ppdb
   - title: Aplikasi
-    link: https://aplikasi.man2kobi.sch.id/
+    link: https://cbt.smpn8balikpapan.sch.id/
 
 submenu:
   - title: Facebook
-    link: "https://www.facebook.com/profile.php?id=100087967555893&mibextid=ZbWKwL"
-    icon: /images/sosmed/fb.png
+    link: "#
   - title: Instagram
-    link: "https://instagram.com/mandua.kotabima?igshid=Yzg5MTU1MDY="
+    link: "#"
     icon: /images/sosmed/ig.png
   - title: Youtube
-    link: "https://youtube.com/@man2kotabima"
+    link: "#"
     icon: /images/sosmed/twitter.png
   - title: Whatsapp
-    link: "+6282339864138"
+    link: "#"
     icon: /images/sosmed/wa.png
   - title: Alumni
     link: "#"
