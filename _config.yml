@@ -1,0 +1,152 @@
+title: MAN 2 Kota Bima
+author:
+  name: man2kotabima2
+  email: man2kotabima2@gmail.com
+
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  MAN 2 Kota Bima adalah sekolah Menengah Atas berkualitas 
+  dengan fasilitas memadai dan program unggulan, 
+  dilengkapi dengan tenaga pendidik berpengalaman dan 
+  metode pembelajaran inovatif.
+
+sambutan: >
+  Selamat datang di website MAN 2 Kota Bima, sekolah yang memiliki visi untuk mencetak 
+  siswa-siswi yang berprestasi, berakhlakul karimah, peduli lingkungan, berwawasan global yang dilandasi iman dan taqwa.
+  Kami sangat berkomitmen untuk memberikan pendidikan terbaik bagi para siswa kami dengan 
+  fasilitas yang memadai dan tenaga pendidik yang berpengalaman. Kami percaya bahwa setiap 
+  siswa memiliki potensi yang luar biasa dan kami akan terus bekerja keras untuk membantu mereka 
+  mengejar mimpi mereka. Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja 
+  sama untuk membangun masa depan yang lebih baik bagi generasi muda.
+
+logo: /images/logo.png
+logofooter: /images/footer_logo.png
+icon: /images/kemenag.png
+
+alamat: Jl. Wolter Monginsidi No. 02, Kel. Sarae, Kec. Rasanae Barat, Kota Bima, NTB
+email: man2kotabima2@gmail.com
+phone: "(0374) 42374"
+
+menus:
+  - title: Home
+    link: /
+  - title: Berita
+    link: /category/berita
+  - title: Jadwal
+    link: "#jadwal"
+    submenus: 
+      - title: Siswa
+        link: /pages/jadwal-siswa
+      - title: Guru
+        link: /pages/jadwal-guru
+  - title: Profil
+    link: /pages/profil
+  - title: PPDB
+    link: /pages/ppdb
+  - title: Aplikasi
+    link: https://aplikasi.man2kobi.sch.id/
+
+submenu:
+  - title: Facebook
+    link: "https://www.facebook.com/profile.php?id=100087967555893&mibextid=ZbWKwL"
+    icon: /images/sosmed/fb.png
+  - title: Instagram
+    link: "https://instagram.com/mandua.kotabima?igshid=Yzg5MTU1MDY="
+    icon: /images/sosmed/ig.png
+  - title: Youtube
+    link: "https://youtube.com/@man2kotabima"
+    icon: /images/sosmed/twitter.png
+  - title: Whatsapp
+    link: "+6282339864138"
+    icon: /images/sosmed/wa.png
+  - title: Alumni
+    link: "#"
+    icon: /images/alumni.png
+  - title: Akademik
+    link: "#"
+    icon: /images/calendar.png
+  - title: PPDB
+    link: "#"
+    icon: /images/admission.png
+
+sliders:
+  - title: MAN 2 Kota Bima
+    text: Selamat Datang
+    image: /gallery/man2kobi.jpeg
+    link: /category/berita
+    linktext: INFO TERBARU 
+  - title: MAN 2 Kota Bima
+    text: Selamat Datang
+    image: /gallery/slider.jpg
+    link: /category/berita
+    linktext: INFO TERBARU
+
+galleries:
+  - title: Foto 1
+    img: /gallery/foto (1).jpeg
+  - title: Foto 2
+    img: /gallery/foto (2).jpeg
+  - title: Foto 3
+    img: /gallery/foto (3).jpeg
+  - title: Foto 4
+    img: /gallery/foto (4).jpeg
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+show_excerpts: true
+
+# Build settings
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+copyright: © copyright 2023 Bimasoft
+
+# Theme-specific settings
+
+minima:
+  # Minima date format.
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  #
+  # date_format: "%b %-d, %Y"
+
+  # Generate social links in footer.
+  #
+  # social_links:
+  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
+  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
+  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
+  #   - { platform: github,         user_url: "https://github.com/jekyll/minima" }
+  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
+  #   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
+  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
+  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
+  #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
+  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
+  #   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
+  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+# If you want to link only specific pages in your header, uncomment this and add the path to the pages in
+# order as they should show up.
+#
+# header_pages:
+#   - about.md
+
+# Set to `true` to show excerpts on the homepage.
+#
+# show_excerpts: false
