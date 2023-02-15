@@ -4,11 +4,11 @@ layout: default
 
 # Informasi PPDB
 
-Silakan Menggunakan **[https://aplikasi.man2kobi.sch.id/ppdb-signup/](https://aplikasi.man2kobi.sch.id/ppdb-signup/)** untuk melakukan pendaftaran
+Silakan Menggunakan **[https://balikpapan.siap-ppdb.com/]** (https://balikpapan.siap-ppdb.com/) untuk melakukan pendaftaran
 
-Mengisi Biodata Login ke **[https://aplikasi.man2kobi.sch.id/](https://aplikasi.man2kobi.sch.id/)**
+Mengisi Biodata Login ke **[#](#)**
 
-**Contact Person / WA : 082340039781**
+**Contact Person / WA : 082xxxxxxxx**
 
-PPDB MAN 2 Kota Bima
+PPDB SMPN 8 Balikpapan
 {: style="text-align:center"}
