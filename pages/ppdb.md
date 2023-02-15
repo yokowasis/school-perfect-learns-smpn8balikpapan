@@ -4,7 +4,7 @@ layout: default
 
 # Informasi PPDB
 
-Silakan Menggunakan **[https://balikpapan.siap-ppdb.com/]** (https://balikpapan.siap-ppdb.com/) untuk melakukan pendaftaran
+Silakan Menggunakan **[https://balikpapan.siap-ppdb.com/](https://balikpapan.siap-ppdb.com/)** untuk melakukan pendaftaran
 
 Mengisi Biodata Login ke **[#](#)**
 
