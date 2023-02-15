@@ -4,8 +4,9 @@ layout: default
 
 # Informasi PPDB
 
-Silakan Menggunakan **[(https://s.id/smpn8bpn)]((https://s.id/smpn8bpn)** untuk melakukan pendaftaran
-]
+Silakan Menggunakan **[https://s.id/smpn8bpn](https://s.id/smpn8bpn)** untuk melakukan pendaftaran
+
+
 Mengisi Biodata Login ke **[#](#)**
 
 **Contact Person / WA : 082xxxxxxxx**
