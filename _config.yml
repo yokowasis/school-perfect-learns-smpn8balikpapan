@@ -79,6 +79,11 @@ sliders:
     image: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
     link: /category/berita
     linktext: INFO TERBARU
+  - title: SMPN 8 Balikpapan
+    text: Selamat Datang
+    image: /gallery/#
+    link: /category/berita
+    linktext: INFO TERBARU
 
 galleries:
   - title: Foto 1
