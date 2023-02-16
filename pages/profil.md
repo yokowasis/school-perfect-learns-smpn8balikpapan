@@ -2,6 +2,6 @@
 layout: default
 ---
 
-# Profil MAN 2 Kota Bima
+# Profil SMPN 8 Balikpapan
 
 Disini di tulis profil singkat 
