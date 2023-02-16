@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Profil MAN 2 KOTA BIMA
+# Profil SMPN 8 Balikpapan
 
 ## Sejarah
 Sejarah singkat di tulis di sini
@@ -11,13 +11,22 @@ Sejarah singkat di tulis di sini
 Daftar Bidang Studi
 1. IPA (Ilmu Pengetahuan Alam)
 2. IPS (Ilmu Pengetahuan SOsial)
-3. Bahasa       
-5.  Agama
+3. Bahasa inggris
+4. Pendidikan agama       
+5. Matematika
+6. Seni Budaya
+7. PPKn
+8. Penjas
+9. Bahasa Indonesia
+10. Informatika
 
 ## Extra Kurikuluer
-- Extra 1
-- Extra 2
-- Extra 3
+- Paskib
+- Bola Volly
+- Sepak Bola
+- PMR
+- Pramuka
+
 
 ## Alumni
 
