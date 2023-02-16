@@ -49,6 +49,9 @@ submenu:
   - title: Instagram
     link: "#"
     icon: /images/sosmed/ig.png
+  - title: Facebook
+    link: "#"
+    icon: /images/sosmed/ig.png
   - title: Youtube
     link: "#"
     icon: /images/sosmed/twitter.png
