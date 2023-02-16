@@ -47,16 +47,16 @@ menus:
 
 submenu:
   - title: Instagram
-    link: "#"
+    link: "https://www.instagram.com/?hl=id"
     icon: /images/sosmed/ig.png
   - title: Facebook
-    link: "https://www.youtube.com/"
+    link: "https://id-id.facebook.com/"
     icon: /images/sosmed/ig.png
   - title: Youtube
     link: "https://www.youtube.com/"
     icon: /images/sosmed/twitter.png
   - title: Whatsapp
-    link: "https://www.youtube.com/"
+    link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
     icon: /images/sosmed/wa.png
   - title: Alumni
     link: "#"
