@@ -53,7 +53,7 @@ submenu:
     link: "#"
     icon: /images/sosmed/ig.png
   - title: Youtube
-    link: "#"
+    link: "https://www.youtube.com/"
     icon: /images/sosmed/twitter.png
   - title: Whatsapp
     link: "#"
