@@ -32,6 +32,8 @@ menus:
     link: /
   - title: Berita
     link: /category/berita
+  - title: Tabloit
+    link: https://s.id/smpn8bpn
   - title: Jadwal
     link: "#jadwal"
     submenus: 
