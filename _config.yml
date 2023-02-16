@@ -50,13 +50,13 @@ submenu:
     link: "#"
     icon: /images/sosmed/ig.png
   - title: Facebook
-    link: "#"
+    link: "https://www.youtube.com/"
     icon: /images/sosmed/ig.png
   - title: Youtube
     link: "https://www.youtube.com/"
     icon: /images/sosmed/twitter.png
   - title: Whatsapp
-    link: "#"
+    link: "https://www.youtube.com/"
     icon: /images/sosmed/wa.png
   - title: Alumni
     link: "#"
