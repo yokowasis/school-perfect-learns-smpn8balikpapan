@@ -46,8 +46,6 @@ menus:
     link: https://cbt.smpn8balikpapan.sch.id/
 
 submenu:
-  - title: Facebook
-    link: "#
   - title: Instagram
     link: "#"
     icon: /images/sosmed/ig.png
