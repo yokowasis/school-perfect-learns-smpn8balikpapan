@@ -33,7 +33,15 @@ menus:
   - title: Berita
     link: /category/berita
   - title: Tabloit
-    link: https://s.id/smpn8bpn
+    - title: Foto 1
+       img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
+    - title: Foto 2
+       img: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
+    - title: Foto 3
+    img: /gallery/foto (3).jpeg
+    - title: Foto 4
+       img: /gallery/foto (4).jpeg
+    link: "#"
   - title: Jadwal
     link: "#jadwal"
     submenus: 
