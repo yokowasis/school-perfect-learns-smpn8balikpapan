@@ -19,7 +19,7 @@ sambutan: >
   mengejar mimpi mereka. Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja 
   sama untuk membangun masa depan yang lebih baik bagi generasi muda.
 
-logo: /images/lgo.PNG
+logo: /images/logobg.png
 logofooter: /images/logobg4.png
 icon: /images/logobg.png
 
@@ -51,40 +51,40 @@ menus:
 submenu:
   - title: Instagram
     link: "https://www.instagram.com/?hl=id"
-    icon: /images/sosmed/ig.png
+    icon: "fab fa-instagram-square"
   - title: Facebook
     link: "https://id-id.facebook.com/"
-    icon: /images/sosmed/ig.png
+    icon: "fab fa-facebook-square"
   - title: Youtube
     link: "https://www.youtube.com/"
-    icon: /images/sosmed/twitter.png
+    icon: "fab fa-youtube-square"
   - title: Whatsapp
     link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
-    icon: /images/sosmed/wa.png
-  - title: Alumni
-    link: "#"
-    icon: /images/alumni.png
-  - title: Akademik
-    link: "#"
-    icon: /images/calendar.png
-  - title: PPDB
-    link: "#"
-    icon: /images/admission.png
+    icon: "fab fa-whatsapp-square"
+  # - title: Alumni
+  #   link: "#"
+  #   icon: /images/alumni.png
+  # - title: Akademik
+  #   link: "#"
+  #   icon: /images/calendar.png
+  # - title: PPDB
+  #   link: "#"
+  #   icon: /images/admission.png
 
 sliders:
-  - title: SMPN 8 Balikpapan
+  - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
+    image: /images/smpn8_new-foto/depanloby&guru.jpg
     link: /category/berita
     linktext: INFO TERBARU 
-  - title: SMPN 8 Balikpapan
+  - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
+    image: /images/smpn8_new-foto/juara_trofeo&futsal.jpg
     link: /category/berita
     linktext: INFO TERBARU
-  - title: SMPN 8 Balikpapan
+  - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /gallery/ftkarate.JPG
+    image: /images/smpn8_new-foto/suasana-upacara.jpg
     link: /category/berita
     linktext: INFO TERBARU
 
@@ -92,9 +92,9 @@ galleries:
   - title: Foto 1
     img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 2
-    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
+    img: /gallery/suasana_kantor.jpeg
   - title: Foto 3
-    img: /gallery/foto (3).jpeg
+    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 4
     img: /gallery/foto (4).jpeg
 

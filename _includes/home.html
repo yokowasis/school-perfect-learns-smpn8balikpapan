@@ -1,22 +1,25 @@
-{%- include slider.html -%} {%- include submenu.html -%}
+{%- include slider.html -%} 
 
 <!-- section -->
-<div class="section margin-top_50">
+<div class="section">
+  {%- include submenu.html -%}
+</div>
+<div class="section theme_bg welcome">
   <div class="container">
     <div class="row">
       <div class="col-md-6 layout_padding_2">
         <div class="full">
-          <div class="heading_main text_align_left">
-            <h2><span>Sambutan</span> Kepala Sekolah</h2>
+          <div class="heading_main">
+            <h2 class="blue"><span>Sambutan</span> Kepala Sekolah</h2>
           </div>
-          <div class="full">
-            <p>{{site.sambutan}}</p>
+          <div class="text_align_center">
+            <img src="images/smpn8_new-foto/muhammad-bagas-setiawan.jpeg" class="centered-image" alt="#" />
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 padding_welcome">
         <div class="full">
-          <img src="images/img2.png" alt="#" />
+          <p class="text-white text_align_justify">{{site.sambutan}}</p>
         </div>
       </div>
     </div>
@@ -77,13 +80,13 @@
 </div>
 <!-- end section -->
 <!-- section -->
-<div class="section layout_padding">
+<div class="section layout_padding theme_bg">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="full">
           <div class="heading_main text_align_center">
-            <h2><span>Gallery </span>Spadan </h2>
+            <h2 class="blue"><span>Gallery </span>Spadan </h2>
           </div>
         </div>
       </div>

@@ -1,0 +1,36 @@
+Update version 1.1 
+
+Navbar:
+    - Home
+    - Profil{
+        sambutan kepala sekolah,
+        latar belakang,
+        visi misi,
+        guru dan staff,
+    }
+    - Prestasi
+    - Berita{
+        lingkungan sekolah,
+        BULETIN
+    }
+    - PPDB / Tabloit
+    - Aplikasi
+
+Konten Home: 
+    - 3 foto atau lebih untuk landing page terbaru(foto depan sekolah, foto siswa prestasi, foto guru-guru)
+
+Konten Profil:
+    - Foto depan sekolah
+    - Foto kepala sekolah dan wakil kepala sekolah
+    - Foto Pengajar
+    - Foto Staff
+    - Foto Karyawan
+    - Visi Misi
+    - Latar Belakang sekolah
+
+Konten Prestasi:
+    - Foto-foto siswa berprestasi beserta caption
+
+Konten Berita:
+    - Foto-foto kegiatan sekolah terbaru beserta caption
+

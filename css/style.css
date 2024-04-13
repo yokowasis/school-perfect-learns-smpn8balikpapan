@@ -28,6 +28,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.80857;
 	overflow-x: hidden !important;
+	padding-top: 80px;
 }
 
 a {
@@ -342,7 +343,7 @@ button:focus {
 }
 
 .top-header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 20;
@@ -350,8 +351,8 @@ button:focus {
     background-repeat: no-repeat;
     background-color: #fff;
     background-size: auto 100%;
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0 0%;
 }
 
 .top-header .navbar .navbar-collapse ul li a {
@@ -369,8 +370,14 @@ a.navbar-brand {
     position: relative;
 }
 
+.navbar-brand span{
+	font-size: medium;
+	margin-bottom: 5px;
+}
+
 a.navbar-brand img {
-    height: 55px;
+	margin: 10px 10px;
+    height: 40px;
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {}
@@ -391,13 +398,13 @@ a.navbar-brand img {
 .top-header.fixed-menu {
     width: 100%;
     position: fixed;
-    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-    -webkit-animation-duration: 1s;
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.2);
+    /* -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
+    animation-fill-mode: both; */
+    /* -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown; */
     background: #fff;
     z-index: 20;
     margin: 0;
@@ -684,11 +691,11 @@ a.navbar-brand img {
     position: relative;
     z-index: 9;
     box-shadow: 0px 0 14px 0 rgba(0,0,0,.3);
-    overflow: hidden;
+    overflow: scroll;
     padding: 0 30px;
 }
 
-.tab_menu ul li:nth-child(7),.tab_menu ul li:nth-child(5) {
+/* .tab_menu ul li:nth-child(7),.tab_menu ul li:nth-child(5) {
     background: #002147;
     transform: skew(-30deg);
 	color:#fff;
@@ -710,7 +717,30 @@ a.navbar-brand img {
     transform: skew(30deg);
 	float: left;
 	color: #fff;
+} */
+
+.horizontal-list {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
 }
+
+.horizontal-list li {
+	width: 48%; /* Two items per row */
+	margin-bottom: 25px;
+  }
+
+  .horizontal-list li a {
+	color: #07528d;
+	transition: color 0.3s ease;
+  }
+  .horizontal-list li a:hover {
+	color: #d4a81e;
+  }
+
+  /* Media query for phone-sized screens */
+  
 
 .tab_menu ul li span {
     font-size: 17px;
@@ -732,10 +762,24 @@ span.icon {
     float: left;
     width: 100%;
     text-align: center;
+	font-size: 70px;
+	line-height: 0;
 }
 
-span.icon img {
+span{
+	overflow: hidden; /* Hide any content that overflows */
+    white-space: nowrap; /* Prevent the content from wrapping */
+    text-overflow: ellipsis;
+}
+
+/* span.icon img {
     height: 35px;
+} */
+
+
+.welcome img{
+	height:300px;
+	width: auto;
 }
 
 /*------------------------------------------------------------------ About -------------------------------------------------------------------*/
@@ -1880,6 +1924,17 @@ p {
 .heading_main h2 span {
 	color: #095a83;
 }
+.heading_main h2.blue{
+	color: #d4a81e;
+}
+.heading_main h2.blue span{
+	color: #fff;
+}
+
+.text-white{
+	color: white;
+}
+
 
 .heading_main p.large {
     font-size: 20px;
@@ -1932,18 +1987,36 @@ p.section_count {
 }
 
 .heading_main {
+	color: white;
     float: left;
     display: flex;
 }
 
 .theme_bg {
-	background: #07528d;
+	/* background: #07528d; */
+	background: #2e7db9;
 }
 
 h3.small_heading {
 	font-size: 35px;
 	font-weight: 600;
 	line-height: normal;
+}
+
+.centered-image {
+    display: inline-block; /* Display as inline block */
+    margin-left: auto; /* Auto margin left */
+    margin-right: auto; /* Auto margin right */
+  }
+
+.padding_top_30{
+	padding-top: 30px;
+}
+.padding_top_50{
+	padding-top: 50px;
+}
+.padding_welcome{
+	padding-top: 80px;
 }
 
 .margin-top_20 {
@@ -1958,8 +2031,16 @@ h3.small_heading {
 	margin-top: 50px;
 }
 
+.margin-top_125 {
+	margin-top: 125px;
+}
+
 .margin-bottom_30 {
 	margin-bottom: 30px;
+}
+
+.margin-bottom_70 {
+	margin-bottom: 70px;
 }
 
 .carousel a.carousel-control-prev {
@@ -2007,7 +2088,6 @@ ul.social_icon li {
 }
 
 .inner_page .top-header {
-
     position: relative;
 
 }
@@ -2231,6 +2311,9 @@ section.inner_banner h3 {
 
 .text_align_right {
 	text-align: right;
+}
+.text_align_justify {
+	text-align: justify;
 }
 
 .float-right_img img {

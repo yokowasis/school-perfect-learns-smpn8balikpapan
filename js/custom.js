@@ -32,7 +32,7 @@
     ................................................. */
     
 	$(window).on('scroll', function () {
-		if ($(window).scrollTop() > 50) {
+		if ($(window).scrollTop() > 1) {
 			$('.top-header').addClass('fixed-menu');
 		} else {
 			$('.top-header').removeClass('fixed-menu');
