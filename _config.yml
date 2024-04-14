@@ -75,17 +75,17 @@ submenu:
 sliders:
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /images/smpn8_new-foto/depanloby&guru.jpg
+    image: /smpn8balikpapan/images/smpn8_new-foto/depanloby&guru.jpg
     link: /category/berita
     linktext: INFO TERBARU 
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /images/smpn8_new-foto/juara_trofeo&futsal.jpg
+    image: /smpn8balikpapan/images/smpn8_new-foto/juara_trofeo&futsal.jpg
     link: /category/berita
     linktext: INFO TERBARU
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang
-    image: /images/smpn8_new-foto/suasana-upacara.jpg
+    image: /smpn8balikpapan/images/smpn8_new-foto/suasana-upacara.jpg
     link: /category/berita
     linktext: INFO TERBARU
 

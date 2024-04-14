@@ -1,7 +1,7 @@
 <!-- LOADER -->
 <div id="preloader">
   <div class="loader">
-    <img src="/images/loader.gif" alt="#" />
+    <img src="{{ site.baseurl }}/images/loader.gif" alt="#" />
   </div>
 </div>
 <!-- end loader -->
@@ -12,7 +12,7 @@
   <nav class="navbar header-nav navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand font-weight-bold d-flex justify-content-between align-items-end" href="index.html"
-        ><img src="{{ site.logo }}" class="w-20" alt="50 Height Image"
+        ><img src="{{ site.baseurl }}/{{ site.logo }}" class="w-20" alt="50 Height Image"
       /><span>SMPN 8 BALIKPAPAN</span></a>
       <button
         class="navbar-toggler"
@@ -31,12 +31,12 @@
         <ul class="navbar-nav">
           {% for menu in site.menus %}
           <li>
-            <a class="nav-link" href="{{ menu.link }}">{{ menu.title }}
+            <a class="nav-link" href="{{ site.baseurl }}/{{ menu.link }}">{{ menu.title }}
               {% if menu.submenus %}
                 <i class="fa fa-angle-down"></i></a>
                 <ul>
                   {% for submenu in menu.submenus %}
-                    <li><a href="{{ submenu.link }}">{{ submenu.title }}</a></li>
+                    <li><a href="{{ site.baseurl }}/{{ submenu.link }}">{{ submenu.title }}</a></li>
                   {% endfor %}
                 </ul>
               {% else %}
@@ -49,7 +49,7 @@
       <div class="search-box">
         <input type="text" class="search-txt" placeholder="Search" />
         <a class="search-btn">
-          <img src="/images/search_icon.png" alt="#" />
+          <img src="{{ site.baseurl }}/images/search_icon.png" alt="#" />
         </a>
       </div>
     </div>
