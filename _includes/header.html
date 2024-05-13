@@ -12,7 +12,7 @@
   <div class="row gx-0 align-items-center" style="height: 45px;">
       <div class="col-8 text-center text-lg-start mb-lg-0" id="responsv-topbar">
           <div class="d-flex flex-wrap">
-              <a class="text-light font me-4 fw-bold fs-4 poppins-bold" href="{{site.baseurl}}" id="logo-text">
+              <a class="text-light font me-4 fw-bold fs-4 poppins-bold" href="{{ site.baseurl }}" id="logo-text">
                 <span>SMPN 8 BALIKPAPAN</span></a>
           </div>
       </div>
@@ -20,8 +20,8 @@
         <ul class="d-flex align-items-center justify-content-end">
           {% for menu in site.submenu %}
             <li>
-              <a href="{{site.baseurl}}{{menu.link}}" class="btn btn-light btn-square border rounded-circle nav-fill me-3">
-                <i class="{{site.baseurl}}{{menu.icon}}"></i>
+              <a href="{{menu.link}}" class="btn btn-light btn-square border rounded-circle nav-fill me-3">
+                <i class="{{ site.baseurl }}{{menu.icon}}"></i>
               </a>
             </li>
           {% endfor %}
@@ -80,13 +80,13 @@
       <ul class="navbar-nav ms-auto py-0">
         {% for menu in site.menus %}
         <li>
-          <a class="nav-item nav-link" href="{{site.baseurl}}{{ menu.link }}">{{ menu.title }}
+          <a class="nav-item nav-link" href="{{ site.baseurl }}{{ menu.link }}">{{ menu.title }}
             {% if menu.submenus %}
             <i class="fa fa-angle-down"></i>
           </a>
             <ul class="dropdown-menu m-0">
               {% for submenu in menu.submenus %}
-                <li><a href="{{site.baseurl}}{{ submenu.link }}" class="dropdown-item">{{ submenu.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ submenu.link }}" class="dropdown-item">{{ submenu.title }}</a></li>
               {% endfor %}
             </ul>
             {% else %}
