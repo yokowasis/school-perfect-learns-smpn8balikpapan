@@ -1,13 +1,45 @@
+<div class="header-carousel owl-carousel">
+  {%- for slider in site.sliders -%}
+  <div class="header-carousel-item">
+    <img src="{{slider.image}}" class="img-fluid w-100" alt="Image" />
+    <div class="carousel-caption">
+      <div class="carousel-caption-content p-3">
+        <h3
+          class="text-white text-uppercase fw-bold mb-4"
+          style="letter-spacing: 3px"
+        >
+          {{slider.text}}
+        </h3>
+        <h1 class="display-1 text-capitalize text-white fw-bold mb-4 ">
+          {{slider.title}}
+        </h1>
+        <p class="mb-5 fs-5">
+
+        </p>
+        <a
+          class="btn btn-primary rounded-pill text-white py-3 px-5"
+          href="{{slider.link}}"
+          >{{slider.linktext}}</a
+        >
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
+
+<!--  -->
+
 <!-- Start Banner -->
-<div class="ulockd-home-slider">
+<!-- <div class="ulockd-home-slider">
   <div class="container-fluid">
     <div class="row">
       <div class="pogoSlider" id="js-main-slider">
         {%- for slider in site.sliders -%}
         <div
           class="pogoSlider-slide homePage-slide"
-          style="background-image: url({{slider.image}})"
+          style="background-image: url({{slider.image}});"
         >
+        <div class="slider-overlay"></div>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -26,9 +58,9 @@
           </div>
         </div>
         {%- endfor -%}
-      </div>
+      </div> -->
       <!-- .pogoSlider -->
-    </div>
+    <!-- </div>
   </div>
-</div>
+</div> -->
 <!-- End Banner -->

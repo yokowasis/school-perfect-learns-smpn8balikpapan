@@ -18,6 +18,7 @@ Navbar:
 
 Konten Home: 
     - 3 foto atau lebih untuk landing page terbaru(foto depan sekolah, foto siswa prestasi, foto guru-guru)
+    - 
 
 Konten Profil:
     - Foto depan sekolah
@@ -34,3 +35,8 @@ Konten Prestasi:
 Konten Berita:
     - Foto-foto kegiatan sekolah terbaru beserta caption
 
+a few things should do before host:
+config.yml -sliders add "/smpn8balikpapan"
+home.html -post.img add "/"
+header.html -menu link add "{{site.baseurl}}/"
+header.html -logo icon add "/smpn8balikpapan"

@@ -8,10 +8,102 @@
 <!-- END LOADER -->
 
 <!-- Start header -->
-<header class="top-header">
-  <nav class="navbar header-nav navbar-expand-lg">
+<div class="container-fluid bg-dark px-5 d-lg-block d-md-block d-sm-block d-xl-block d-block py-1">
+  <div class="row gx-0 align-items-center" style="height: 45px;">
+      <div class="col-8 text-center text-lg-start mb-lg-0" id="responsv-topbar">
+          <div class="d-flex flex-wrap">
+              <a class="text-light font me-4 fw-bold fs-4 poppins-bold" href="index.html" id="logo-text">
+                <span>SMPN 8 BALIKPAPAN</span></a>
+          </div>
+      </div>
+      <div class="col-4 text-center text-lg-end" id="responsv-topbar1">
+        <ul class="d-flex align-items-center justify-content-end">
+          {% for menu in site.submenu %}
+            <li>
+              <a href="{{menu.link}}" class="btn btn-light btn-square border rounded-circle nav-fill me-3">
+                <i class="{{menu.icon}}"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+<!-- PEMBATAS NEW PATCH -->
+<!-- <div class="first-header">
+  <div class="row">
+    <div class="col d-flex justify-content-start white_fonts">
+      <a class="navbar-brand white_fonts" href="index.html"
+        >SMPN 8 Balikpapan</span></a
+      >
+    </div>
+    <div class="col d-flex justify-content-end white_fonts">
+      <div class="social-media">
+        <ul class="horizontal-list">
+          {% for menu in site.submenu %}
+            <li>
+              <a href="{{menu.link}}">
+                <span class="icon"><i class="{{menu.icon}}"></i></span>
+              </a>
+            </li>
+          {% endfor %}
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- SKUDER -->
+<!-- NEW PATCH: HEADER NAVBAR -->
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
+  >
+    <a href="/" class="navbar-brand p-0">
+      <h1 class="text-primary m-0">
+        <img src="{{site.logo}}" alt="logo" style="height: 70px;">
+      </h1>
+      <!-- <img src="img/logo.png" alt="Logo"> -->
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="fa fa-bars"></span>
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto py-0">
+        {% for menu in site.menus %}
+        <li>
+          <a class="nav-item nav-link" href="{{ menu.link }}">{{ menu.title }}
+            {% if menu.submenus %}
+            <i class="fa fa-angle-down"></i>
+          </a>
+            <ul class="dropdown-menu m-0">
+              {% for submenu in menu.submenus %}
+                <li><a href="{{ submenu.link }}" class="dropdown-item">{{ submenu.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            </a>
+            {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Navbar & Hero End -->
+<!-- PEMBATAS NEW PATCH -->
+<!-- <header class="top-header">
+  <nav class="navbar-expand-lg white_fonts second-header">
     <div class="container-fluid">
-      <a class="navbar-brand font-weight-bold d-flex justify-content-between align-items-end" href="index.html"
+      <a class="navbar-brand font-weight-bold d-flex justify-content-between align-items-end white_fonts" href="index.html"
         ><img src="{{ site.baseurl }}/{{ site.logo }}" class="w-20" alt="50 Height Image"
       /><span>SMPN 8 BALIKPAPAN</span></a>
       <button
@@ -31,12 +123,12 @@
         <ul class="navbar-nav">
           {% for menu in site.menus %}
           <li>
-            <a class="nav-link" href="{{ site.baseurl }}/{{ menu.link }}">{{ menu.title }}
+            <a class="nav-link" href="{{ menu.link }}">{{ menu.title }}
               {% if menu.submenus %}
                 <i class="fa fa-angle-down"></i></a>
                 <ul>
                   {% for submenu in menu.submenus %}
-                    <li><a href="{{ site.baseurl }}/{{ submenu.link }}">{{ submenu.title }}</a></li>
+                    <li><a href="{{ submenu.link }}">{{ submenu.title }}</a></li>
                   {% endfor %}
                 </ul>
               {% else %}
@@ -45,13 +137,14 @@
           </li>
           {% endfor %}
         </ul>
-      </div>
-      <div class="search-box">
+      </div> -->
+      <!--  -->
+      <!-- <div class="search-box">
         <input type="text" class="search-txt" placeholder="Search" />
         <a class="search-btn">
           <img src="{{ site.baseurl }}/images/search_icon.png" alt="#" />
         </a>
-      </div>
+      </div> -->
     </div>
   </nav>
 </header>

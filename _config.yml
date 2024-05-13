@@ -2,7 +2,7 @@ title: SMP Negeri 8 Balikpapan
 author:
   name: smpn8balikpapan
   email: smpn8@smpn8balikpapan.sch.id
-baseurl: "/smpn8balikpapan"
+#  baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -29,39 +29,37 @@ email: smpn8@smpn8balikpapan.sch.id
 phone: "(0542) 761902"
 
 menus:
-  - title: Home
+  - title: Beranda
     link: /
   - title: Berita
     link: /category/berita
-  - title: Tabloit
-    link: https://s.id/smpn8bpn
-  - title: Jadwal
-    link: "#jadwal"
-    submenus: 
-      - title: Siswa
-        link: /pages/jadwal-siswa
-      - title: Guru
-        link: /pages/jadwal-guru
+  - title: Pengumuman
+    link: /pages/jadwal
   - title: Profil
-    link: /pages/profil
-  - title: PPDB
+    link: "#Profil"
+    submenus: 
+      - title: Profil Sekolah
+        link: /pages/jadwal-siswa
+      - title: Staff & Karyawan
+        link: /pages/jadwal-guru
+  - title: Prestasi
     link: /pages/ppdb
   - title: Aplikasi
     link: https://cbt.smpn8balikpapan.sch.id/
 
 submenu:
   - title: Instagram
-    link: "https://www.instagram.com/?hl=id"
-    icon: "fab fa-instagram-square"
+    link: "https://www.instagram.com/smpnegeri8balikpapan"
+    icon: "fab fa-instagram"
   - title: Facebook
     link: "https://id-id.facebook.com/"
-    icon: "fab fa-facebook-square"
+    icon: "fab fa-facebook-f"
   - title: Youtube
-    link: "https://www.youtube.com/"
-    icon: "fab fa-youtube-square"
+    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
+    icon: "fab fa-youtube"
   - title: Whatsapp
     link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
-    icon: "fab fa-whatsapp-square"
+    icon: "fab fa-whatsapp"
   # - title: Alumni
   #   link: "#"
   #   icon: /images/alumni.png
@@ -74,30 +72,25 @@ submenu:
 
 sliders:
   - title: SMP Negeri 8 Balikpapan
-    text: Selamat Datang
-    image: /smpn8balikpapan/images/smpn8_new-foto/depanloby&guru.jpg
+    text: Selamat Datang di
+    image: /images/AulaSmpn8.jpg
     link: /category/berita
-    linktext: INFO TERBARU 
+    linktext: Berita Terkini
   - title: SMP Negeri 8 Balikpapan
-    text: Selamat Datang
-    image: /smpn8balikpapan/images/smpn8_new-foto/juara_trofeo&futsal.jpg
+    text: Selamat Datang di
+    image: /images/LobySmpn8.jpg
     link: /category/berita
-    linktext: INFO TERBARU
-  - title: SMP Negeri 8 Balikpapan
-    text: Selamat Datang
-    image: /smpn8balikpapan/images/smpn8_new-foto/suasana-upacara.jpg
-    link: /category/berita
-    linktext: INFO TERBARU
+    linktext: Berita Terkini
 
 galleries:
   - title: Foto 1
-    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
+    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 2
-    img: /gallery/suasana_kantor.jpeg
+    img: gallery/suasana_kantor.jpeg
   - title: Foto 3
-    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
+    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 4
-    img: /gallery/foto (4).jpeg
+    img: gallery/foto (4).jpeg
 
 jekyll-archives:
   enabled: all
