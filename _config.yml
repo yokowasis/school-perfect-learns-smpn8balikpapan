@@ -36,7 +36,7 @@ menus:
   - title: Pengumuman
     link: /pages/jadwal
   - title: Profil
-    link: "#Profil"
+    link: "#"
     submenus: 
       - title: Profil Sekolah
         link: /pages/jadwal-siswa
