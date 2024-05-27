@@ -123,8 +123,10 @@
 	  $(window).scroll(function () {
 		if ($(this).scrollTop() > 45) {
 		  $(".navbar").addClass("sticky-top shadow-sm ");
+		  $("#navbarCollapse a.nav-item.nav-link").removeClass("text-white");
 		} else {
-		  $(".navbar").removeClass("sticky-top shadow-sm");
+			$(".navbar").removeClass("sticky-top shadow-sm");
+			$("#navbarCollapse a.nav-item.nav-link").addClass("text-white");
 		}
 	  });
 	  
@@ -169,6 +171,13 @@
 		  '<i class="bi bi-arrow-right"></i>',
 		],
 	  });
+	  // Service spread
+	//   const paragraphs = document.querySelectorAll('.mu-service-single .service-text p');
+	// 	paragraphs.forEach(p => {
+	// 	  while (p.scrollHeight > p.clientHeight) {
+	// 		p.textContent = p.textContent.replace(/\W*\s(\S)*$/, ' ...');
+	// 	  }
+	// 	});
 	
 	  // Modal Video
 	  $(document).ready(function () {

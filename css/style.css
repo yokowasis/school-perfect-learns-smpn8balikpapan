@@ -103,8 +103,27 @@ h6 a:hover {
 	opacity: .8
 }
 
+.bg-secondarymain{
+	background-color: var(--bs-secondarymain);
+}
+
+.poppins-bolder {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 700;
+	font-style: normal;
+  }
 .poppins-bold {
-	font-family: "Poppins", sans-serif;
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 600;
+	font-style: normal;
+  }
+.poppins-normal {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 400;
+	font-style: normal;
+  }
+.poppins-thin {
+	font-family: "Poppins", sans-serif !important;
 	font-weight: 100;
 	font-style: normal;
   }
@@ -170,7 +189,7 @@ h6 a:hover {
 }
 
 .btn-hover:hover {
-    color: var(--bs-secondary) !important;
+    color: var(--bs-secondarymain) !important;
 }
 
 .fixed-top .container {
@@ -189,7 +208,7 @@ h6 a:hover {
 
 .topbar a:hover,
 .topbar a i:hover {
-    color: var(--bs-secondary) !important;
+    color: var(--bs-secondarymain) !important;
 }
 
 
@@ -408,8 +427,8 @@ button:focus {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     margin-right: 25px;
-    padding: 35px 0;
-    color: var(--bs-dark) !important;
+    padding: 26px 0;
+    color: white;
     font-size: 16px;
     font-weight: 400;
     outline: none;
@@ -418,7 +437,7 @@ button:focus {
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--dark);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -466,7 +485,7 @@ button:focus {
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--bs-light) !important;
+    background: var(--bs-light) !important; 
     transition: .5s;
     opacity: 1;
 }
@@ -479,11 +498,14 @@ button:focus {
         left: 0;
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
+		transition: .5s;
+		background: white;
+		color: var(--bs-dark);
     }
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light) !important;
+        background: white !important; /*var(--bs-light)*/
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -516,13 +538,17 @@ button:focus {
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
+		transition: .5s;
+		background: rgba(0, 0, 0, 0);
+		color: white !important;
     }
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light) !important;
+		border-bottom: 1px solid rgba(255, 255, 255, .1);
+        background: white !important; /*var(--bs-light)*/
+		color: var(--bs-dark) !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -756,7 +782,7 @@ button:focus {
     position: relative;
     width: 100%;
     height: 700px;
-    margin-top: 95px;
+    /* margin-top: 95px; */
     display: block;
     object-fit: cover;
     transition: 0.5s;
@@ -797,6 +823,145 @@ button:focus {
     width: 75%;
     
 }
+
+/* ------------------------Service Section Start----------*/
+#mu-service {
+	display: inline;
+	float: left;
+	margin-top: -80px;
+	width: 100%;
+	z-index: 10;
+	position: relative;
+}
+  #mu-service .mu-service-area {
+	display: inline;
+	float: left;
+	width: 100%;
+  }
+  #mu-service .mu-service-area .mu-service-single {
+	
+	background-color: #ffffff;
+	color: #fff !important;
+	display: inline;
+	float: left;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 33.33%;
+	border: 0.1px solid rgb(235, 235, 235);
+  outline: 0.1px solid rgb(235, 235, 235);
+	}
+	/* #mu-service .mu-service-area .mu-service-single:last-child{
+		border-right: 1px solid rgb(220, 220, 220);
+		border-top: none;
+	} */
+	#mu-service .mu-service-area .mu-service-single:nth-child(1) .service-title{
+		padding: 20px 5px;
+		background-color: var(--bs-secondarymain);
+	 }
+	#mu-service .mu-service-area .mu-service-single:nth-child(2) .service-title{
+		padding: 20px 5px;
+		background-color: #ee7b51;
+	 }
+	#mu-service .mu-service-area .mu-service-single:nth-child(3) .service-title{
+		padding: 20px 5px;
+		background-color: #ef7649;
+	 }
+
+	 #mu-service h3 {
+		 color: white !important;
+		padding: 0;
+		font-family: "Poppins", sans-serif;
+		padding-top: 4px;
+		align-self: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 16px !important;
+	}
+	#mu-service .mu-service-single .service-title i{
+		font-size: 30px;
+		padding-right: 8px;
+	}
+	
+	#mu-service .mu-service-single h5{
+		font-size: 12px;
+		text-align: start;
+		font-weight: 300;
+		padding: 0 15px;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.mu-service-single .service-text p {
+		font-size: 11px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		padding: 0px 20px;
+		color: #000000 !important;
+		line-height: normal;
+		text-align: justify;
+		max-height: 80px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.mu-service-single .service-text p:after {
+		content: '...';
+		position: absolute;
+		right: 10px;
+		bottom: -2px;
+		background: white;
+	  }
+  #mu-service .mu-service-area .mu-service-single span {
+	font-size: 30px;
+  }
+  #mu-service .mu-service-area .mu-service-single h3 {
+	font-size: 25px;
+  }
+
+  .card-image {
+	width: 100%;
+	height: 15vw !important;
+	object-fit: cover !important;
+	object-position: center !important;
+ }
+
+
+
+  @media (max-width: 991px) {
+	#mu-service .mu-service-area .mu-service-single h3 {
+	  font-size: 20px;
+	}
+  }
+  @media (max-width: 640px) {
+	#mu-service {
+	  margin-top: 30px;
+	}
+
+	#mu-service .mu-service-area .mu-service-single h3 {
+	  font-size: 16px;
+	}
+	.card-image {
+		height: 20vw !important;
+	 }
+	 .mu-service-single .service-text p {
+		max-height: 114px;
+	}
+}
+  @media (max-width: 480px) {
+	#mu-service .mu-service-area .mu-service-single {
+	  width: 100%;
+	}
+	.mu-service-single .service-text p {
+	max-height: 64px;
+	}
+	.card-image {
+		height: 30vw !important;
+	 }
+  
+	#mu-service .mu-service-area .mu-service-single h3 {
+	  font-size: 18px;
+	}
+
+  }
 
 /*** Appointment Start ***/
 .appointment {
@@ -866,7 +1031,7 @@ button:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: var(--bs-secondary);
+    background: var(--bs-secondarymain);
     border-radius: 50%;
     transition: all 300ms;
 }
@@ -894,6 +1059,12 @@ button:focus {
         opacity: 0;
     }
 }
+@media (max-width: 767px) {
+	p.video1-text{
+		font-size: 14px !important;
+		text-align: justify;
+	}
+  }
 
 #videoModal {
     z-index: 99999;
@@ -969,7 +1140,7 @@ button:focus {
 }
 
 .team .team-item .team-content h5 {
-    color: var(--bs-secondary);
+    color: var(--bs-secondarymain);
     transition: 0.5s;
 }
 
@@ -981,6 +1152,7 @@ button:focus {
     background: var(--bs-primary);
     color: var(--bs-white);
 }
+
 /*** Team End ***/
 
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
@@ -1034,7 +1206,7 @@ a.navbar-brand {
 }
 
 a.navbar-brand img {
-	margin: 10px 10px;
+	margin: 0px 10px;
     height: 40px;
 }
 
