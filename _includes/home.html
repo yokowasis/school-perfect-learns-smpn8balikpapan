@@ -1,13 +1,84 @@
 {%- include slider.html -%} 
 
 <!-- section -->
+<section id="mu-service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="mu-service-area">
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-laptop"></i></div>
+                <h3>Fasilitas</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/pelatihan3.jpg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>Kami menawarkan fasilitas terbaik untuk mendukung proses belajar mengajar. Kami menyediakan Chromebook untuk setiap siswa, laboratorium fisika yang lengkap, Smart TV untuk praktikum, dan perpustakaan. Semua fasilitas ini dirancang untuk memberikan pengalaman belajar yang modern dan interaktif bagi siswa-siswi.</p>
+              <h5><a href="#">Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a></h5>
+            </div>
+          </div>
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-school"></i></div>
+                <h3>Tentang Kami</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/AulaSmpn8.jpg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>SMPN 8 Balikpapan adalah sekolah unggulan rujukan Google yang berkomitmen untuk mencetak generasi berprestasi dan berkarakter. Dengan kurikulum berstandar nasional dan pengajar profesional, kami menyediakan lingkungan belajar yang inspiratif dan inovatif. Bergabunglah dengan kami untuk meraih masa depan gemilang.</p>
+              <h5><a href="#">Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a></h5>
+            </div>
+          </div>
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-campground"></i></div>
+                <h3>Ekstrakurikler</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/ekstra-tari.jpeg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>Kami menawarkan berbagai ekstrakurikuler seperti tari, bola, pramuka, klub sains, dan olahraga. Setiap kegiatan dirancang untuk mengembangkan bakat, keterampilan sosial, dan kepemimpinan siswa, menjadikan mereka para siswa-siswi yang siap bersaing dan menghadapi tantangan masa depan.</p>
+              <h5><a href="#">Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Book Appointment Start -->
 <div class="container-fluid appointment py-5">
   <div class="container py-5">
     <div class="row g-5 align-items-center justify-content-center">
       <div class="col-lg-8 wow fadeInLeft " data-wow-delay="0.2">
         <div class="section-title text-start">
-          <h4 class="sub-title pe-3 mb-1 fs-4">Lingkungan SMPN 8 Balikpapan</h4>
+          <h4 class="sub-title pe-3 mb-1 fs-4 poppins-bolder">Lingkungan SMPN 8 Balikpapan</h4>
           <!-- <h1 class="display-4 mb-4">
             Best Quality Services With Minimal Pain Rate
           </h1>
@@ -21,7 +92,7 @@
             <div class="col-lg-5 col-md-5">
               <div class="video h-100">
                 <img
-                  src="/images/LobySmpn8_2.jpg"
+                  src="{{ site.baseurl }}/images/LobySmpn8_2.jpg"
                   class="img-fluid rounded w-100 h-100"
                   style="object-fit: cover"
                   alt=""
@@ -43,7 +114,7 @@
                   <!-- <h5 class="mb-1">
                     <i class="text-primary me-2 fs-3"></i> Sambutan
                   </h5> -->
-                  <p class="mb-0">
+                  <p class="mb-0 video1-text">
                     Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
                     berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
                     terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
@@ -68,14 +139,14 @@
           <div class="team-item rounded">
             <div class="team-img rounded-top">
               <img
-                src="/images/contohkepsek.jpg"
+                src="{{ site.baseurl }}/images/kepsek.jpeg"
                 class="img-fluid rounded-top w-100"
                 alt=""
               />
             </div>
-            <div class="team-content text-white text-center border border-top-0 rounded-bottom p-1" style="background-color: #efa286;">
-              <h5 class="text-white" >Kepala Sekolah</h5>
-              <p class="mb-0 text-white">Prof. Pambudi Mr, M.Pd</p>
+            <div class="team-content text-white text-center border border-top-0 rounded-bottom p-1 bg-secondarymain">
+              <h5 class="text-white poppins-normal pb-0">Kepala Sekolah</h5>
+              <p class="mb-0 text-white poppins-bold">Mugiyatno, S.Pd., M. M</p>
             </div>
           </div>
       </div>
@@ -177,28 +248,6 @@
 </div>
 <!-- Book Appointment End -->
 
-<div class="section theme_bg welcome">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 layout_padding_2">
-        <div class="full">
-          <div class="heading_main">
-            <h2 class="blue"><span>Sambutan</span> Kepala Sekolah</h2>
-          </div>
-          <div class="text_align_center">
-            <img src="{{ site.baseurl }}/images/smpn8_new-foto/muhammad-bagas-setiawan.jpeg" class="centered-image" alt="#" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 padding_welcome">
-        <div class="full">
-          <p class="text-white text_align_justify">{{site.sambutan}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end section -->
 <!-- section -->
 <div class="section layout_padding padding_bottom-0">
   <div class="container">
