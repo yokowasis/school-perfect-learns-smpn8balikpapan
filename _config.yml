@@ -2,7 +2,7 @@ title: SMP Negeri 8 Balikpapan
 author:
   name: smpn8balikpapan
   email: smpn8@smpn8balikpapan.sch.id
-#  baseurl: "/smpn8balikpapan"
+ baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -30,7 +30,7 @@ phone: "(0542) 761902"
 
 menus:
   - title: Beranda
-    link: /
+    link: /smpn8balikpapan
   - title: Berita
     link: /category/berita
   - title: Pengumuman

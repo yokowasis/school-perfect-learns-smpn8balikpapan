@@ -36,7 +36,6 @@ Konten Berita:
     - Foto-foto kegiatan sekolah terbaru beserta caption
 
 a few things should do before host:
-config.yml -sliders add "/smpn8balikpapan"
-home.html -post.img add "/"
-header.html -menu link add "{{site.baseurl}}/"
-header.html -logo icon add "/smpn8balikpapan"
+# header.html -menu link add "{{site.baseurl}}/"
+# header.html -logo icon add "/smpn8balikpapan"
+at menu, beranda in config.yml. add "/smpn8balikpapan"
