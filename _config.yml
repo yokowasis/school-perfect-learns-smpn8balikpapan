@@ -30,7 +30,7 @@ phone: "(0542) 761902"
 
 menus:
   - title: Beranda
-    link: /smpn8balikpapan
+    link: /
   - title: Berita
     link: /category/berita
   - title: Pengumuman
