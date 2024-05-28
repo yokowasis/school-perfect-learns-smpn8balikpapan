@@ -848,7 +848,7 @@ button:focus {
 	text-align: center;
 	width: 33.33%;
 	border: 0.1px solid rgb(235, 235, 235);
-  outline: 0.1px solid rgb(235, 235, 235);
+  	outline: 0.1px solid rgb(235, 235, 235);
 	}
 	/* #mu-service .mu-service-area .mu-service-single:last-child{
 		border-right: 1px solid rgb(220, 220, 220);
@@ -865,10 +865,10 @@ button:focus {
 	#mu-service .mu-service-area .mu-service-single:nth-child(3) .service-title{
 		padding: 20px 5px;
 		background-color: #ef7649;
-	 }
+	}
 
-	 #mu-service h3 {
-		 color: white !important;
+	#mu-service h3 {
+		color: white !important;
 		padding: 0;
 		font-family: "Poppins", sans-serif;
 		padding-top: 4px;
@@ -891,14 +891,14 @@ button:focus {
 	}
 
 	.mu-service-single .service-text p {
-		font-size: 11px;
+		font-size: 13px;
 		font-family: "Poppins", sans-serif;
 		font-weight: 500;
 		padding: 0px 20px;
 		color: #000000 !important;
 		line-height: normal;
 		text-align: justify;
-		max-height: 80px;
+		max-height: 82px;
 		overflow: hidden;
 		position: relative;
 	}
@@ -906,10 +906,11 @@ button:focus {
 	.mu-service-single .service-text p:after {
 		content: '...';
 		position: absolute;
-		right: 10px;
-		bottom: -2px;
+		right: 3%;
+		bottom: 2%;
 		background: white;
-	  }
+		font-size: 13px;
+	}
   #mu-service .mu-service-area .mu-service-single span {
 	font-size: 30px;
   }
@@ -930,6 +931,13 @@ button:focus {
 	#mu-service .mu-service-area .mu-service-single h3 {
 	  font-size: 20px;
 	}
+	.mu-service-single .service-text p {
+		font-size: 11px;
+	}
+	.mu-service-single .service-text p::after {
+		right: 6%;
+		bottom: -8%;
+	}
   }
   @media (max-width: 640px) {
 	#mu-service {
@@ -945,13 +953,22 @@ button:focus {
 	 .mu-service-single .service-text p {
 		max-height: 114px;
 	}
+	.mu-service-single .service-text p::after {
+		right: 5%;
+        bottom: -5%;
+	}
 }
   @media (max-width: 480px) {
 	#mu-service .mu-service-area .mu-service-single {
 	  width: 100%;
 	}
 	.mu-service-single .service-text p {
-	max-height: 64px;
+		font-size: 14px;
+		max-height: 64px;
+	}
+	.mu-service-single .service-text p::after {
+		right: 3%;
+		bottom: -2%;
 	}
 	.card-image {
 		height: 30vw !important;

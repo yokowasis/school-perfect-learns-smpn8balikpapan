@@ -38,4 +38,4 @@ Konten Berita:
 a few things should do before host:
 # header.html -menu link add "{{site.baseurl}}/"
 # header.html -logo icon add "/smpn8balikpapan"
-at menu, beranda in config.yml. add "/smpn8balikpapan"
+# at menu, beranda in config.yml. add "/smpn8balikpapan"
