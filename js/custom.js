@@ -144,33 +144,67 @@
 
 	  // Hero Header carousel
 	  $(".header-carousel").owlCarousel({
-		animateOut: "slideOutDown",
+		animateOut: "fadeOut",
 		items: 1,
 		autoplay: true,
-		smartSpeed: 1000,
+		smartSpeed: 1500,
 		dots: false,
 		loop: true,
 		nav: true,
+		mouseDrag: false,
 		navText: [
 		  '<i class="bi bi-arrow-left"></i>',
 		  '<i class="bi bi-arrow-right"></i>',
 		],
 	  });
-	
-	  // International carousel
-	  $(".testimonial-carousel").owlCarousel({
+	  // news carousel
+	  $(".news-carousel").owlCarousel({
 		autoplay: true,
-		items: 1,
-		smartSpeed: 1500,
+		items: 4,
+		smartSpeed: 1000,
 		dots: true,
 		loop: true,
 		margin: 25,
 		nav: true,
+		mouseDrag: false,
 		navText: [
 		  '<i class="bi bi-arrow-left"></i>',
 		  '<i class="bi bi-arrow-right"></i>',
 		],
+		responsiveClass: true,
+		responsive: {
+		  0: {
+			items: 1,
+		  },
+		  400: {
+			items: 2,
+		  },
+		  768: {
+			items: 3,
+		  },
+		  900: {
+			items: 3,
+		  },
+		  976: {
+			items: 4,
+		  },
+		},
 	  });
+	
+	  // International carousel
+	//   $(".testimonial-carousel").owlCarousel({
+	// 	autoplay: true,
+	// 	items: 1,
+	// 	smartSpeed: 1500,
+	// 	dots: true,
+	// 	loop: true,
+	// 	margin: 25,
+	// 	nav: true,
+	// 	navText: [
+	// 	  '<i class="bi bi-arrow-left"></i>',
+	// 	  '<i class="bi bi-arrow-right"></i>',
+	// 	],
+	//   });
 	  // Service spread
 	//   const paragraphs = document.querySelectorAll('.mu-service-single .service-text p');
 	// 	paragraphs.forEach(p => {
@@ -209,8 +243,8 @@
 		margin: 25,
 		nav: true,
 		navText: [
-		  '<i class="bi bi-arrow-left"></i>',
-		  '<i class="bi bi-arrow-right"></i>',
+		//   '<i class="bi bi-arrow-left"></i>',
+		//   '<i class="bi bi-arrow-right"></i>',
 		],
 		responsiveClass: true,
 		responsive: {
