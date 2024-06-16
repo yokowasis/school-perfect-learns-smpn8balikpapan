@@ -78,7 +78,7 @@
       <span class="fa fa-bars"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <!-- <ul class="navbar-nav ms-auto py-0">
+      <ul class="navbar-nav ms-auto py-0">
         {% for menu in site.menus %}
         <li>
           <a class="nav-item nav-link" href="{{ menu.link | relative_url }}">{{ menu.title }}
@@ -93,25 +93,6 @@
             </a>
             {% endif %}
         </li>
-        {% endfor %}
-      </ul> -->
-      <ul class="navbar-nav ms-auto py-0">
-        {% for menu in site.menus %}
-          <li class="nav-item {% if menu.submenus %}dropdown{% endif %}">
-            <a class="nav-link {% if menu.submenus %}dropdown-toggle{% endif %}" href="{{ menu.link | relative_url }}" {% if menu.submenus %}id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"{% endif %}>
-              {{ menu.title }}
-              {% if menu.submenus %}
-                <i class="fa fa-angle-down"></i>
-              {% endif %}
-            </a>
-            {% if menu.submenus %}
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                {% for submenu in menu.submenus %}
-                  <li><a class="dropdown-item" href="{{ submenu.link | relative_url }}">{{ submenu.title }}</a></li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
         {% endfor %}
       </ul>
     </div>
