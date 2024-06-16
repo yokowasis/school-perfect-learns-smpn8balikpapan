@@ -81,7 +81,7 @@
       <ul class="navbar-nav ms-auto py-0">
         {% for menu in site.menus %}
         <li>
-          <a class="nav-item nav-link" href="{{site.baseurl}}{{ menu.link }}">{{ menu.title }}
+          <a class="nav-item nav-link" href="{{ menu.link | relative_url }}">{{ menu.title }}
             {% if menu.submenus %}
             <i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu m-0">
