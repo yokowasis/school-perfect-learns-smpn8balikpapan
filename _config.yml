@@ -32,7 +32,7 @@ menus:
   - title: Beranda
     link: /
   - title: Berita
-    link: /category/berita
+    link: /pages/berita
   - title: Pengumuman
     link: /pages/jadwal
   - title: Profil
@@ -86,7 +86,7 @@ galleries:
 
 jekyll-archives:
   enabled: all
-  layout: archive
+  layout: default
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

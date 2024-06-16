@@ -571,6 +571,9 @@ button:focus {
 		background: rgba(0, 0, 0, 0);
 		color: white !important;
     }
+	.nav-2{
+		background-color: #202135 !important;
+	}
     .sticky-top.navbar-light {
 		position: fixed;
 		background: var(--bs-dark) !important;
