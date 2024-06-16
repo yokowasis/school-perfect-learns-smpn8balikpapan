@@ -32,7 +32,7 @@ menus:
   - title: Beranda
     link: /
   - title: Berita
-    link: /category/berita/index.html
+    link: /category/berita
   - title: Pengumuman
     link: /pages/jadwal
   - title: Profil
@@ -92,7 +92,7 @@ jekyll-archives:
     month: '/:year/:month/'
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
-    category: '/category/:name/'
+    category: '/smpn8balikpapan/category/:name/'
 
 show_excerpts: true
 
