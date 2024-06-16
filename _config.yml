@@ -92,7 +92,7 @@ jekyll-archives:
     month: '/:year/:month/'
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
-    category: '/smpn8balikpapan/category/:name/'
+    category: '/category/:name/'
 
 show_excerpts: true
 
