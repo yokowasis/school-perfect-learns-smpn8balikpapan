@@ -181,144 +181,35 @@
       </div>
     </div>
     <div class="news-carousel owl-carousel">
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/carousel-1.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>sit amet consectetur adipisicing elit. Soluta
-                  inventore cum accusamus, dolor qui ullam vadas skudder olelympus</p>
-              </div>
+      {% for post in site.posts limit:5 %}
+          <div
+          class="wow fadeInUp"
+          data-wow-delay="0.1s"
+          >
+            <div class="service-item d-flex justify-content-center">
+              <a class="service-img rounded" href="{{site.baseurl}}{{ post.url | relative_url }}">
+                <img
+                  src="{{site.baseurl}}{{ post.img }}"
+                  class="img-fluid rounded w-100"
+                  alt="gambar"
+                />
+                <div class="service-content">
+                  <div class="text-white">
+                    <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+                    <p>{{post.title}}</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-        </div>
-      </a>
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/carousel-1.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>consectetur adipisicing elit. Soluta
-                  inventore cum accusamus, dolor qui ullam en skudy varas en lyra</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/carousel-1.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>Dolor, sit. Soluta
-                  inventore cum accusamus, dolor qui ullam om sken pla otng kompley</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/contohkepsek.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>Dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/LobySmpn8_2.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>Dolor, sit amet consectetur adipisicing elit. Soluta
-                  inventore cum accusamus, dolor qui ullam</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a
-        class="wow fadeInUp"
-        data-wow-delay="0.1s"
-        href="#"
-      >
-        <div class="service-item">
-          <div class="service-img rounded">
-            <img
-              src="{{site.baseurl}}/images/LobySmpn8_2.jpg"
-              class="img-fluid rounded w-100"
-              alt=""
-            />
-            <div class="service-content">
-              <div class="text-white">
-                <span class="user-news-post"><i class="fas fa-user"></i>Admin</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>27/11/2023</span>
-                <p>Dolor, sit amet consectetur adipisicing elit. Soluta
-                  inventore cum accusamus, dolor qui ullam</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+      {% endfor %}
     </div>
   </div>
 </div>
 <!-- Featured News Slider End -->
 
 <!-- Featured Buletin Start -->
-<div class="container-fluid buletin pb-5">
+<!-- <div class="container-fluid buletin pb-5">
   <div class="row align-items-center justify-content-center">
     <div class="d-flex col-md-6 justify-content-center buletin-img-first">
       <img src="{{site.baseurl}}/images/buletin-1.png" alt="">
@@ -327,7 +218,7 @@
       <img src="{{site.baseurl}}/images/buletin-2.png" alt="">
     </div>
   </div>
-</div>
+</div> -->
 <!-- Featured Buletin End -->
 
 <!-- Gallerys https://source.unsplash.com/random/300x200 -->
@@ -421,6 +312,7 @@
   </div>
 </div> -->
 <!-- end section -->
+
 <!-- section -->
 <!-- <div class="section layout_padding theme_bg">
   <div class="container">

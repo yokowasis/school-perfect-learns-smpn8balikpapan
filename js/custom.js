@@ -160,7 +160,7 @@
 	  // news carousel
 	  $(".news-carousel").owlCarousel({
 		autoplay: true,
-		items: 4,
+		items: 1,
 		smartSpeed: 1000,
 		dots: true,
 		loop: true,
@@ -175,19 +175,19 @@
 		responsive: {
 		  0: {
 			items: 1,
-		  },
-		  400: {
-			items: 2,
-		  },
-		  768: {
-			items: 3,
-		  },
-		  900: {
-			items: 3,
-		  },
-		  976: {
-			items: 4,
-		  },
+		  }
+		//   400: {
+		// 	items: 2,
+		//   },
+		//   768: {
+		// 	items: 3,
+		//   },
+		//   900: {
+		// 	items: 3,
+		//   },
+		//   976: {
+		// 	items: 4,
+		//   },
 		},
 	  });
 	

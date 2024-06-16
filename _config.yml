@@ -2,7 +2,7 @@ title: SMP Negeri 8 Balikpapan
 author: Admin
 name: smpn8balikpapan
 email: smpn8@smpn8balikpapan.sch.id
-baseurl: "/smpn8balikpapan"
+# baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -32,7 +32,7 @@ menus:
   - title: Beranda
     link: /
   - title: Berita
-    link: /category/berita
+    link: /category/berita/index.html
   - title: Pengumuman
     link: /pages/jadwal
   - title: Profil
@@ -60,15 +60,7 @@ submenu:
   - title: Whatsapp
     link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
     icon: "fab fa-whatsapp"
-  # - title: Alumni
-  #   link: "#"
-  #   icon: /images/alumni.png
-  # - title: Akademik
-  #   link: "#"
-  #   icon: /images/calendar.png
-  # - title: PPDB
-  #   link: "#"
-  #   icon: /images/admission.png
+
 
 sliders:
   - title: SMP Negeri 8 Balikpapan
