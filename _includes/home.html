@@ -175,15 +175,15 @@
 <!-------------- Featured News Slider Start -->
 <div class="container-fluid service py-5">
   <div class="container py-5">
-    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+    <div class="section-title mb-5 wow fadeIn" data-wow-delay="0.2s">
       <div class="sub-style">
-        <h4 class="sub-title px-3 mb-0 fs-4 poppins-bolder">Berita</h4>
+        <h4 class="sub-title px-3 mb-0 fs-4 poppins-bolder">Berita Terkini</h4>
       </div>
     </div>
     <div class="news-carousel owl-carousel">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:4 %}
           <div
-          class="wow fadeInUp"
+          class="wow fadeIn"
           data-wow-delay="0.1s"
           >
             <div class="service-item d-flex justify-content-center">
@@ -204,22 +204,38 @@
           </div>
       {% endfor %}
     </div>
+    <div class="news-detail row pt-5">
+      <div class="col-md-6">
+        <div class="underline-header">
+          <h4 class="poppins-bold">Berita lain</h4>
+          <div class="underline"></div>
+        </div>
+        {% for post in site.posts offset:4 limit:4 %} 
+          <a class="mini-news" href="{{site.baseurl}}{{ post.url }}">
+          <div class="mini-news-image"><img src="{{site.baseurl}}{{ post.img }}" alt=""></div>
+          <div class="service-content">
+              <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+              <p>{{post.title}}</p>
+          </div>
+          </a>
+        {% endfor%}
+        <div class="more-news-detail">
+          <a href="{{site.baseurl}}/pages/berita" class="">Berita selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="underline-header">
+          <h4 class="poppins-bold">Pengumuman</h4>
+          <div class="underline"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus.</p>
+      </div>
+    </div>
   </div>
 </div>
-<!-- Featured News Slider End -->
-
-<!-- Featured Buletin Start -->
-<!-- <div class="container-fluid buletin pb-5">
-  <div class="row align-items-center justify-content-center">
-    <div class="d-flex col-md-6 justify-content-center buletin-img-first">
-      <img src="{{site.baseurl}}/images/buletin-1.png" alt="">
-    </div>
-    <div class="d-flex col-md-6 justify-content-center buletin-img-secondary">
-      <img src="{{site.baseurl}}/images/buletin-2.png" alt="">
-    </div>
-  </div>
-</div> -->
-<!-- Featured Buletin End -->
 
 <!-- Gallerys https://source.unsplash.com/random/300x200 -->
 <div class="container-fluid service py-5">

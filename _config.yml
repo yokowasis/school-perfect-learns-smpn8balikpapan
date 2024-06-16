@@ -66,12 +66,12 @@ sliders:
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang di
     image: /images/AulaSmpn8.jpg
-    link: /category/berita
+    link: /pages/berita
     linktext: Berita Terkini
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang di
     image: /images/LobySmpn8.jpg
-    link: /category/berita
+    link: /pages/berita
     linktext: Berita Terkini
 
 galleries:
