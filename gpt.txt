@@ -1,0 +1,38 @@
+// OK //
+1. **Profil Sekolah**
+   - Visi dan misi // masuk ke tentang kami
+   - Prestasi sekolah // halaman tersendiri
+
+// OK //
+2. **Berita dan Pengumuman**
+   - Berita terkini seputar kegiatan sekolah 
+
+// OK //
+3. **Informasi Akademik**
+   - Kurikulum
+   - Jadwal pelajaran // temporary
+   - Program ekstrakurikuler
+
+4. **Informasi Guru dan Staf**
+   - Daftar guru beserta mata pelajaran yang diajarkan
+   - Profil singkat guru dan staf // masuk ke Struktur organisasi
+// jadi satu
+
+5. **Fasilitas Sekolah**
+   - Deskripsi dan foto fasilitas sekolah (laboratorium, perpustakaan, ruang kelas, dll.)
+// tanyakan ke mitra
+
+6. **Pendaftaran dan Informasi Penerimaan Siswa Baru**
+   - Prosedur pendaftaran
+   - Syarat dan ketentuan pendaftaran
+   - Formulir pendaftaran online / tanyakan ke mitra
+
+
+7. **Galeri Foto dan Video**
+   - Dokumentasi kegiatan sekolah
+   - Foto acara dan kegiatan ekstrakurikuler
+
+8. **Kontak dan Lokasi**
+   - Alamat lengkap sekolah
+   - Peta lokasi
+   - Informasi kontak (telepon, email)
