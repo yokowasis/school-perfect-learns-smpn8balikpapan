@@ -31,19 +31,24 @@ phone: "(0542) 761902"
 menus:
   - title: Beranda
     link: /
-  - title: Berita
-    link: /category/berita
-  - title: Pengumuman
-    link: /pages/jadwal
   - title: Profil
-    link: "/#profil"
-    submenus: 
+    link: /#profil
+    submenus:
       - title: Profil Sekolah
-        link: /pages/jadwal-siswa
-      - title: Staff & Karyawan
-        link: /pages/jadwal-guru
-  - title: Prestasi
-    link: /pages/ppdb
+        link: /pages/profil-sekolah
+      - title: Profil Staf
+        link: /pages/profil-staf
+  - title: Berita
+    link: /pages/berita
+  - title: Pengumuman
+    link: /#pengumuman
+    submenus:
+      - title: Prosedur Pendaftaran
+        link: /pages/prosedur
+      - title: Formulir Pendaftaran Online
+        link: /pages/form-pendaftaran
+  - title: Galeri
+    link: /pages/galeri
   - title: Aplikasi
     link: https://cbt.smpn8balikpapan.sch.id/
 

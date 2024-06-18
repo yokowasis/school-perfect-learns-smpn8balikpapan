@@ -27,7 +27,6 @@ Daftar Bidang Studi
 - PMR
 - Pramuka
 
-
 ## Alumni
 
 Tahun     |     Jumlah
