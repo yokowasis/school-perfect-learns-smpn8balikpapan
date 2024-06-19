@@ -2,7 +2,7 @@ title: SMP Negeri 8 Balikpapan
 author: Admin
 name: smpn8balikpapan
 email: smpn8@smpn8balikpapan.sch.id
-# baseurl: "/smpn8balikpapan"
+baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -21,6 +21,7 @@ sambutan: >
   sama untuk membangun masa depan yang lebih baik bagi generasi muda.
 
 logo: /images/logobg.png
+logo-2: /images/smpn8_new-foto/new-logo.png
 logofooter: /images/logobg4.png
 icon: /images/logobg.png
 
@@ -33,20 +34,24 @@ menus:
     link: /
   - title: Profil
     link: /#profil
-    submenus:
-      - title: Profil Sekolah
-        link: /pages/profil-sekolah
-      - title: Profil Staf
-        link: /pages/profil-staf
+    submenus: 
+      - title: Tentang Sekolah
+        link: /pages/jadwal-siswa
+      - title: Staff & Karyawan
+        link: /pages/jadwal-guru
   - title: Berita
     link: /pages/berita
   - title: Pengumuman
-    link: /#pengumuman
-    submenus:
-      - title: Prosedur Pendaftaran
-        link: /pages/prosedur
-      - title: Formulir Pendaftaran Online
-        link: /pages/form-pendaftaran
+    link: /pages/jadwal
+  - title: Informasi
+    link: /#informasi
+    submenus: 
+      - title: Ekstrakurikuler
+        link: /pages/ekstrakurikuler
+      - title: Prestasi Sekolah
+        link: /pages/prestasi-sekolah
+      - title: Fasilitas Sekolah
+        link: /pages/fasilitas-sekolah
   - title: Galeri
     link: /pages/galeri
   - title: Aplikasi
@@ -65,26 +70,18 @@ submenu:
   - title: Whatsapp
     link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
     icon: "fab fa-whatsapp"
-  # - title: Alumni
-  #   link: "#"
-  #   icon: /images/alumni.png
-  # - title: Akademik
-  #   link: "#"
-  #   icon: /images/calendar.png
-  # - title: PPDB
-  #   link: "#"
-  #   icon: /images/admission.png
+
 
 sliders:
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang di
     image: /images/AulaSmpn8.jpg
-    link: /category/berita
+    link: /pages/berita
     linktext: Berita Terkini
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang di
     image: /images/LobySmpn8.jpg
-    link: /category/berita
+    link: /pages/berita
     linktext: Berita Terkini
 
 galleries:
@@ -99,7 +96,7 @@ galleries:
 
 jekyll-archives:
   enabled: all
-  layout: archive
+  layout: default
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

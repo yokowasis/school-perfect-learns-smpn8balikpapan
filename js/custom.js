@@ -14,7 +14,8 @@
 	/* ..............................................
     Navbar Bar
     ................................................. */
-	
+	// li a.nav-item nav-link ul.dropdown-menu li a.dropdown-item
+
 	$('.navbar-nav .nav-link').on('click', function() {
 		var toggle = $('.navbar-toggler').is(':visible');
 		if (toggle) {
@@ -23,10 +24,52 @@
 		}
 	});
 
-	$(".nav-link").on("click", function() {
-		$(this).closest("li").find("ul").addClass("show");
+	$(document).ready(function() {
+		// Toggle submenu on clicking the nav-link
+		$(".nav-link").on("click touchstart", function(e) {
+			// Prevent the default action of the link
+			// e.preventDefault(); 
+
+		  // Find the corresponding dropdown menu
+		  var $submenu = $(this).siblings(".dropdown-menu");
+		  
+		  // If the dropdown menu is already shown, remove the 'show' class to hide it
+		  if ($submenu.hasClass("show")) {
+			$submenu.removeClass("show");
+		  } else {
+			// Hide all other open submenus
+			$(".dropdown-menu").removeClass("show");
+			
+			// Show the clicked submenu
+			$submenu.addClass("show");
+		  }
+		});
+	  
+		// Close submenu when clicking outside of it
+		// $(document).on("click", function(e) {
+		//   if (!$(e.target).closest(".nav-item").length) {
+		// 	$(".dropdown-menu").removeClass("show");
+		//   }
+		// });
 	});
-	
+	  
+	$(document).ready(function() {
+		// Select all nav-link elements
+		const navLinks = $('.nav-link');
+  
+		navLinks.on('click', function(event) {
+		  // Check if the clicked link already has the active class
+		  if($(this).hasClass('active')) {
+			// If it has, remove the active class
+			$(this).removeClass('active');
+		  } else {
+			// Otherwise, remove the active class from all nav-links
+			navLinks.removeClass('active');
+			// And add the active class to the clicked nav-link
+			$(this).addClass('active');
+		  }
+		});
+	  });
 	/* ..............................................
     Fixed Menu
     ................................................. */
@@ -122,16 +165,18 @@
 	  // Sticky Navbar
 	  $(window).scroll(function () {
 		if ($(this).scrollTop() > 45) {
-		  $(".navbar").addClass("sticky-top shadow-sm ");
-		  $("#navbarCollapse a.nav-item.nav-link").removeClass("text-white");
+			$(".navbar").addClass("sticky-top shadow-sm");
+			$("#navbarCollapse a.nav-item.nav-link").removeClass("text-white");
+			// $("#navbar-logo").attr("src", "/images/smpn8_new-foto/new-logo.png");
 		} else {
 			$(".navbar").removeClass("sticky-top shadow-sm");
 			$("#navbarCollapse a.nav-item.nav-link").addClass("text-white");
+			// $("#navbar-logo").attr("src", "/images/logobg.png");
 		}
-	  });
+	});
 	  
 	  $(window).resize(function () {
-		if ($(window).width() < 575) {
+		if ($(window).width() <= 760) {
 			$("#responsv-topbar").addClass("d-none");
 			$("#responsv-topbar1").removeClass("col-4");
 		} else {
@@ -160,7 +205,7 @@
 	  // news carousel
 	  $(".news-carousel").owlCarousel({
 		autoplay: true,
-		items: 4,
+		items: 1,
 		smartSpeed: 1000,
 		dots: true,
 		loop: true,
@@ -175,19 +220,19 @@
 		responsive: {
 		  0: {
 			items: 1,
-		  },
-		  400: {
-			items: 2,
-		  },
-		  768: {
-			items: 3,
-		  },
-		  900: {
-			items: 3,
-		  },
-		  976: {
-			items: 4,
-		  },
+		  }
+		//   400: {
+		// 	items: 2,
+		//   },
+		//   768: {
+		// 	items: 3,
+		//   },
+		//   900: {
+		// 	items: 3,
+		//   },
+		//   976: {
+		// 	items: 4,
+		//   },
 		},
 	  });
 	
