@@ -1,5 +1,3 @@
 ---
 layout: default
 ---
-
-# Jadwal guru

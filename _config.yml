@@ -33,7 +33,7 @@ menus:
   - title: Beranda
     link: /
   - title: Profil
-    link: "/#profil"
+    link: /#profil
     submenus: 
       - title: Tentang Sekolah
         link: /pages/jadwal-siswa
