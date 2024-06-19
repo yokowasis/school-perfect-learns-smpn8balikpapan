@@ -2,7 +2,7 @@ title: SMP Negeri 8 Balikpapan
 author: Admin
 name: smpn8balikpapan
 email: smpn8@smpn8balikpapan.sch.id
-# baseurl: "/smpn8balikpapan"
+baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -21,6 +21,7 @@ sambutan: >
   sama untuk membangun masa depan yang lebih baik bagi generasi muda.
 
 logo: /images/logobg.png
+logo-2: /images/smpn8_new-foto/new-logo.png
 logofooter: /images/logobg4.png
 icon: /images/logobg.png
 
@@ -31,19 +32,28 @@ phone: "(0542) 761902"
 menus:
   - title: Beranda
     link: /
+  - title: Profil
+    link: "/#profil"
+    submenus: 
+      - title: Tentang Sekolah
+        link: /pages/jadwal-siswa
+      - title: Staff & Karyawan
+        link: /pages/jadwal-guru
   - title: Berita
     link: /pages/berita
   - title: Pengumuman
     link: /pages/jadwal
-  - title: Profil
-    link: "/#profil"
+  - title: Informasi
+    link: /#informasi
     submenus: 
-      - title: Profil Sekolah
-        link: /pages/jadwal-siswa
-      - title: Staff & Karyawan
-        link: /pages/jadwal-guru
-  - title: Prestasi
-    link: /pages/ppdb
+      - title: Ekstrakurikuler
+        link: /pages/ekstrakurikuler
+      - title: Prestasi Sekolah
+        link: /pages/prestasi-sekolah
+      - title: Fasilitas Sekolah
+        link: /pages/fasilitas-sekolah
+  - title: Galeri
+    link: /pages/galeri
   - title: Aplikasi
     link: https://cbt.smpn8balikpapan.sch.id/
 
