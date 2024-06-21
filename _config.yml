@@ -33,7 +33,7 @@ menus:
   - title: Beranda
     link: /
   - title: Profil
-    link: "#profil"
+    link: "#"
     submenus: 
       - title: Tentang Sekolah
         link: /pages/profil-sekolah
@@ -44,7 +44,7 @@ menus:
   - title: Pengumuman
     link: /pages/pengumuman
   - title: Informasi
-    link: "#informasi"
+    link: "#"
     submenus: 
       - title: Ekstrakurikuler
         link: /pages/ekstrakurikuler

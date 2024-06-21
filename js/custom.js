@@ -1,6 +1,16 @@
 (function ($) {
     "use strict";
 	
+	// $("a#counter").click(function()
+    // {
+    //      $.get("#");
+    //      return false; // prevent default browser refresh on "#" link
+    // });
+	$("a.counter").click(function()
+    {
+         $.get("#");
+         return false; // prevent default browser refresh on "#" link
+    });
 	/* ..............................................
 	Loader 
     ................................................. */
