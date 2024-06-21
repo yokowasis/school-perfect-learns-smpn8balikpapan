@@ -11,65 +11,94 @@
 		$('body').delay(450).css({'overflow':'visible'});
 	});
     	
+	$(window).resize(function () {
+		if ($(window).width() <= 992) {
+			$("#responsv-topbar").addClass("d-none");
+		} else {
+			$("#responsv-topbar").removeClass("d-none");
+		}
+	  }).resize();
+
 	/* ..............................................
     Navbar Bar
     ................................................. */
 	// li a.nav-item nav-link ul.dropdown-menu li a.dropdown-item
 
-	$('.navbar-nav .nav-link').on('click', function() {
-		var toggle = $('.navbar-toggler').is(':visible');
-		if (toggle) {
-			// $('.navbar-collapse').collapse('hide');
-			// alert ("123");
-		}
+	// $('.navbar-nav .nav-link').on('click', function() {
+	// 	var toggle = $('.navbar-toggler').is(':visible');
+	// 	if (toggle) {
+	// 		// $('.navbar-collapse').collapse('hide');
+	// 		// alert ("123");
+	// 	}
+	// });
+	$(document).ready(function() {
+		// Menutup navbar saat mengklik di luar navbar
+		$(document).click(function(event) {
+			var clickover = $(event.target);
+			var _opened = $(".navbar-collapse").hasClass("show");
+			if (_opened === true && !clickover.hasClass("navbar-toggler") && !clickover.closest('.navbar-collapse').length) {
+				$(".navbar-toggler").click();
+			}
+		});
 	});
+	
 
 	$(document).ready(function() {
+		$(window).resize(function () {
+			$(".nav-link").on("click", function(e) {
+				if ($(window).width() >= 992) {
+					// Prevent the default action of the link
+					// e.preventDefault();
+		
+				  // Find the corresponding dropdown menu
+				  var $submenu = $(this).siblings(".dropdown-menu");
+				  
+				  // If the dropdown menu is already shown, remove the 'show' class to hide it
+				  if ($submenu.hasClass("show")) {
+					$submenu.removeClass("show");
+				  } else {
+					// Hide all other open submenus
+					$(".dropdown-menu").removeClass("show");
+					
+					// Show the clicked submenu
+					$submenu.addClass("show");
+				  }
+				} else {
+					var $submenu = $(this).siblings(".dropdown-menu");
+					$(".dropdown-menu").removeClass("show");
+					setTimeout($submenu.addClass("show"), 350);
+				}
+			});
+		  }).resize();
 		// Toggle submenu on clicking the nav-link
-		$(".nav-link").on("click touchstart", function(e) {
-			// Prevent the default action of the link
-			// e.preventDefault(); 
-
-		  // Find the corresponding dropdown menu
-		  var $submenu = $(this).siblings(".dropdown-menu");
-		  
-		  // If the dropdown menu is already shown, remove the 'show' class to hide it
-		  if ($submenu.hasClass("show")) {
-			$submenu.removeClass("show");
-		  } else {
-			// Hide all other open submenus
-			$(".dropdown-menu").removeClass("show");
-			
-			// Show the clicked submenu
-			$submenu.addClass("show");
-		  }
-		});
+		
+		
 	  
 		// Close submenu when clicking outside of it
-		// $(document).on("click", function(e) {
-		//   if (!$(e.target).closest(".nav-item").length) {
-		// 	$(".dropdown-menu").removeClass("show");
-		//   }
-		// });
-	});
-	  
-	$(document).ready(function() {
-		// Select all nav-link elements
-		const navLinks = $('.nav-link');
-  
-		navLinks.on('click', function(event) {
-		  // Check if the clicked link already has the active class
-		  if($(this).hasClass('active')) {
-			// If it has, remove the active class
-			$(this).removeClass('active');
-		  } else {
-			// Otherwise, remove the active class from all nav-links
-			navLinks.removeClass('active');
-			// And add the active class to the clicked nav-link
-			$(this).addClass('active');
+		$(document).on("click touchstart", function(e) {
+		  if (!$(e.target).closest(".nav-item").length) {
+			$(".dropdown-menu").removeClass("show");
 		  }
 		});
-	  });
+	});
+	
+	// $(document).ready(function() {
+	// 	// Select all nav-link elements
+	// 	const navLinks = $('.nav-link');
+  
+	// 	navLinks.on('click', function(event) {
+	// 	  // Check if the clicked link already has the active class
+	// 	  if($(this).hasClass('active')) {
+	// 		// If it has, remove the active class
+	// 		$(this).removeClass('active');
+	// 	  } else {
+	// 		// Otherwise, remove the active class from all nav-links
+	// 		navLinks.removeClass('active');
+	// 		// And add the active class to the clicked nav-link
+	// 		$(this).addClass('active');
+	// 	  }
+	// 	});
+	//   });
 	/* ..............................................
     Fixed Menu
     ................................................. */

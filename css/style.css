@@ -305,16 +305,31 @@ button:focus {
 }
 
 .loader {
-    display: block;
+    display: blo;
     flex-wrap: wrap;
-    width: 250px;
-    height: auto;
+    height: 150px;
+    width: auto;
     -webkit-transform-style: preserve-3d;
 }
 
 .loader img {
-    width: 100%;
-    height: auto;
+	height: 80%;
+    width: auto;
+}
+@media (max-width: 990px) {
+	.loader img {
+		height: 50%;
+	}
+}
+@media (max-width: 600px) {
+	.loader img {
+		height: 45%;
+	}
+}
+@media (max-width: 400px) {
+	.loader img {
+		height: 40%;
+	}
 }
 
 .box {
@@ -523,19 +538,41 @@ button:focus {
     transition: .5s;
     opacity: 1;
 } */
-.navbar .nav-item:hover .dropdown-menu a {
+/* .navbar .nav-item:hover .dropdown-menu a {
     transform: rotateX(0deg);
     visibility: visible;
 	color: var(--bs-primary);
     transition: .5s;
     opacity: 1;
-}
+} */
 .navbar li a.dropdown-item:hover {
 	color: var(--bs-primary);
     transition: .5s;
     background-color: var(--bs-dark);
 }
 
+/* @mixin hover-supported {    
+    @media not all and (pointer: coarse) {
+      &:hover {
+        @content;
+      }
+    }
+}
+
+a.nav-item.nav-link {
+  background-color:gray;
+    @include hover-supported() {
+      background-color:white;
+    }
+} */
+/* @media (hover: hover) and (pointer: fine) {
+	a:hover { color: red; }
+  } */
+/* @media (max-width: 992px) {
+	a.nav-item.nav-link:hover ~ ul {
+		display:inherit !important;
+	}
+  } */
 @media (max-width: 991.98px) {
 	.navbar-light {
         position: absolute;
@@ -562,6 +599,7 @@ button:focus {
     .navbar.navbar-expand-lg .navbar-toggler:hover{
         color: var(--bs-primary);
     }
+	
 
     .navbar-light .navbar-collapse {
         margin-top: 15px;
@@ -955,12 +993,33 @@ button:focus {
 		padding-right: 8px;
 	}
 	
-	#mu-service .mu-service-single h5{
-		font-size: 12px;
+	#mu-service .mu-service-single a h5{
+		font-size: 14px;
+		padding: 0 20px;
 		text-align: start;
-		font-weight: 300;
-		padding: 0 15px;
+		font-weight: 600;
 		font-family: 'Poppins', sans-serif;
+	}
+	#mu-service .mu-service-single a:hover h5{
+		color: var(--bs-primary);
+	}
+	@media (max-width: 768px){
+		#mu-service .mu-service-single a h5{
+			font-size: 13px;
+			font-weight: 600;
+		}
+	}
+	@media (max-width: 600px){
+		#mu-service .mu-service-single a h5{
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+	@media (max-width: 480px){
+		#mu-service .mu-service-single a h5{
+			font-size: 14px;
+			font-weight: 600;
+		}
 	}
 
 	.mu-service-single .service-text p {
@@ -974,6 +1033,10 @@ button:focus {
 		max-height: 82px;
 		overflow: hidden;
 		position: relative;
+	}
+
+	.mu-service-single .service-text a i {
+		margin-left: 3px;
 	}
 	
 	.mu-service-single .service-text p:after {

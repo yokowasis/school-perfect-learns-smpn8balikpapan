@@ -81,17 +81,17 @@
       <ul class="navbar-nav ms-auto py-0">
         {% for menu in site.menus %}
         <li>
-          <a class="nav-item nav-link" href="{{ menu.link | relative_url }}">{{ menu.title }}
-            {% if menu.submenus %}
-            <i class="fa fa-angle-down"></i></a>
-            <ul class="dropdown-menu m-0">
-              {% for submenu in menu.submenus %}
-                <li><a href="{{site.baseurl}}{{ submenu.link }}" class="dropdown-item">{{ submenu.title }}</a></li>
-              {% endfor %}
-            </ul>
-            {% else %}
-            </a>
-            {% endif %}
+          <a class="nav-item nav-link" href="{{ site.baseurl }}{{ menu.link }}">{{ menu.title }}
+          {% if menu.submenus %}
+          <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu m-0" id="submenu">
+            {% for submenu in menu.submenus %}
+              <li><a href="{{site.baseurl}}{{ submenu.link }}" class="dropdown-item">{{ submenu.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          </a>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
