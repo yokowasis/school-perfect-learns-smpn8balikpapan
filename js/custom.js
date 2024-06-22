@@ -236,6 +236,7 @@
 		loop: true,
 		nav: true,
 		mouseDrag: false,
+		touchDrag: false,
 		navText: [
 		  '<i class="bi bi-arrow-left"></i>',
 		  '<i class="bi bi-arrow-right"></i>',
@@ -251,6 +252,7 @@
 		margin: 25,
 		nav: true,
 		mouseDrag: false,
+		touchDrag: false,
 		navText: [
 		  '<i class="bi bi-arrow-left"></i>',
 		  '<i class="bi bi-arrow-right"></i>',

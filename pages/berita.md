@@ -1,5 +1,5 @@
 ---
 layout: berita
-title: Berita
+title: Berita Terkini
 ---
 

@@ -1,70 +1,44 @@
 ---
 layout: default
 ---
-
 <div class="archive">
   <div>
-    <div class="heading_main" style="display: block; float: none;">
-      <h2>#<span>{{ page.title }}</span></h2>
-    </div>
+    <div>
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    </div> 
   </div>
   <ul class="posts">
-    <div class="row">
+    <div class="row g-4 justify-content-center">
       {% assign i = 0 %}
       {% assign pengumuman_posts = site.categories.Pengumuman %}
       {% for post in pengumuman_posts %}
-        {% if i==2 %}
-        <div class="col-12 mt-5">
-          <div class="heading_main" style="display: block; float: none;">
-            <h2 style="font-size: 30px;"><span>Minggu Lalu</span></h2>
-          </div>
+
+        {% if i==4 %}
+        <div>
+          <h1 class="post-title p-name" itemprop="name headline">Arsip</h1>
         </div>
         {% endif %}
 
-        {% if i==5 %}
-        <div class="col-12 mt-5">
-          <div class="heading_main" style="display: block; float: none;">
-            <h2 style="font-size: 30px;"><span>Arsip</span></h2>
+        {% if 3>=i %}
+        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s" id="news-container">
+          <a href="{{ post.url | relative_url }}" class="hovered-content rounded">
+              <div class="post-content rounded-bottom p-4">
+                  <p class="mb-2 poppins-bold news-title">{{ post.title }}</p>
+                  <div class="separator"></div>
+                  <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+                  <div class="news-text-content">
+                    {{ post.excerpt }}
+                  </div>
+              </div>
+          </a>
+        </div>
+        {% else %}
+        <a class="mini-news" href="{{ post.url | relative_url }}">
+          <div class="service-content">
+              <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+              <p>{{post.title}}</p>
           </div>
-        </div>
-        {% endif %}
-
-        {% if i==0 %}
-        <div class="col-12 col-sm-12 col-md-8">
-          <!-- <div style="height: 150px;">
-            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ post.img | relative_url}}" />
-          </div> -->
-          <div class="title" style="font-weight: bold; font-size: 1.5em;"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-          <div><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}, oleh {{ post.author }}</span></div>
-          <div class="excerpt">{{ post.excerpt }}</div>
-        </div>
-      {% elsif i==1 %}
-        <div class="col-12 col-sm-12 col-md-4">
-          <!-- <div style="height: 150px;">
-            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ post.img | relative_url}}" />
-          </div> -->
-          <div class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-          <div><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}, oleh {{ post.author }}</span></div>
-          <div class="excerpt">{{ post.excerpt }}</div>
-        </div>
-      {% elsif i>=5 %}
-        <div class="col-6">
-          <!-- <div style="height: 150px;">
-            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ post.img | relative_url}}" />
-          </div> -->
-          <div class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-          <div><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}, oleh {{ post.author }}</span></div>
-          <div class="excerpt">{{ post.excerpt }}</div>
-        </div>
-      {% else %}
-        <div class="col col-sm-6 col-md-4">
-          <!-- <div style="height: 150px;">
-            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ post.img | relative_url}}" />
-          </div> -->
-          <div class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-          <div><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}, oleh {{ post.author }}</span></div>
-          <div class="excerpt">{{ post.excerpt }}</div>
-        </div>
+          </a>
       {% endif %}
       {% assign i = i | plus: 1 %}
     {% endfor %}

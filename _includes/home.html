@@ -43,8 +43,8 @@
               />
             </div>
             <div class="service-text">
-              <p>SMPN 8 Balikpapan adalah sekolah unggulan rujukan Google yang berkomitmen untuk mencetak generasi berprestasi dan berkarakter. Dengan kurikulum berstandar nasional dan pengajar profesional, kami menyediakan lingkungan belajar yang inspiratif dan inovatif. Bergabunglah dengan kami untuk meraih masa depan gemilang.</p>
-              <a href="#" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+              <p>{{ site.profil-sekolah }}</p>
+              <a href="{{ site.baseurl }}/pages/profil-sekolah" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
             </div>
           </div>
           <!-- Start single service -->
@@ -57,7 +57,7 @@
             </div>
             <div class="">
               <img
-                src="{{ site.baseurl }}/images/ekstra-tari.jpeg"
+                src="{{ site.baseurl }}/images/smpn8_new-foto/ekstra-basket.jpg"
                 class="card-image"
                 alt=""
               />
@@ -176,7 +176,7 @@
 <!-------------- Featured News Slider Start -->
 <div class="container-fluid service py-5">
   <div class="container py-5">
-    <div class="section-title mb-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="section-title mb-4 wow fadeIn" data-wow-delay="0.2s">
       <div class="sub-style">
         <h4 class="sub-title px-3 mb-0 fs-4 poppins-bolder">Berita Terkini</h4>
       </div>
@@ -189,9 +189,9 @@
           data-wow-delay="0.1s"
           >
             <div class="service-item d-flex justify-content-center">
-              <a class="service-img rounded" href="{{site.baseurl}}{{ post.url }}">
+              <a class="service-img rounded" href="{{ post.img | relative_url}}">
                 <img
-                  src="{{site.baseurl}}{{ post.img }}"
+                  src="{{ post.img | relative_url}}"
                   class="img-fluid rounded w-100"
                   alt="gambar"
                 />
@@ -214,8 +214,8 @@
         </div>
         {% assign berita_posts = site.posts | where: "categories", "Berita" %}
         {% for post in berita_posts offset:4 limit:4 %}
-          <a class="mini-news" href="{{site.baseurl}}{{ post.url }}">
-          <div class="mini-news-image"><img src="{{site.baseurl}}{{ post.img }}" alt=""></div>
+          <a class="mini-news" href="{{ post.url | relative_url }}">
+          <div class="mini-news-image"><img src="{{ post.img | relative_url}}" alt=""></div>
           <div class="service-content">
               <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
               <p>{{post.title}}</p>
@@ -233,7 +233,7 @@
         </div>
         {% assign pengumuman_posts = site.posts | where: "categories", "Pengumuman" %}
         {% for post in pengumuman_posts limit:4 %}
-          <a class="mini-news" href="{{site.baseurl}}{{ post.url }}">
+          <a class="mini-news" href="{{ post.url | relative_url }}">
           <!-- <div class="mini-news-image"><img src="{{site.baseurl}}{{ post.img }}" alt=""></div> -->
           <div class="service-content">
               <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
