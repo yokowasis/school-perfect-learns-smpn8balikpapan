@@ -30,6 +30,24 @@ profil-sekolah: >
   berharap siswa dapat tumbuh menjadi pribadi yang terus berkembang setiap harinya dengan
   didampingi oleh tenaga pendidik yang berpengalaman.
 
+fasilitas: >
+  Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
+  dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
+  membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
+  Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
+  yang luas untuk digunakan sebagai sarana pengembangan diri. Berikut kami beberapa daftar
+
+ekstrakurikuler: >
+  Di sekolah kami, akademik bukanlah satu-satunya hal yang dapat dipelajari,
+  terdapat berbagai kegiatan ekstrakurikuler yang dapat diikuti oleh para siswa untuk
+  mengembangkan bakat dan minat mereka di luar jam pelajaran. Mulai dari kegiatan yang
+  dapat meningkatkan keterampilan fisik dan sportivitas, kegiatan di bidang seni dan
+  budaya, serta kegiatan yang berfokus pada kepemimpinan dan kemanusiaan. Setiap
+  kegiatan dirancang untuk mengembangkan bakat, membangun karakter disiplin, kerja
+  sama tim, dan memberikan kesempatan kepada siswa untuk belajar dan berkembang
+  dalam lingkungan yang positif dan mendukung.
+
+
 logo: /images/logobg.png
 logo-2: /images/smpn8_new-foto/new-logo.png
 logofooter: /images/logobg4.png
@@ -59,9 +77,9 @@ menus:
       - title: Ekstrakurikuler
         link: /pages/ekstrakurikuler
       - title: Prestasi Sekolah
-        link: /pages/prestasi-sekolah
+        link: /pages/prestasi
       - title: Fasilitas Sekolah
-        link: /pages/fasilitas-sekolah
+        link: /pages/fasilitas
   - title: Galeri
     link: /pages/galeri
   - title: Aplikasi

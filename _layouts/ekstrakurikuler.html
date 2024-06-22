@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic -->
+  {%- include head.html -%}
+
+  <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    {%- include header-2.html -%}
+    <div style="margin-top: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="defaultlayout">
+              <div>
+                <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+              </div>
+              <div class="text-justify">
+                <p class="mb-4">
+                    {{ site.ekstrakurikuler}}
+                </p>
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- include footer.html -%} {%- include footer-script.html -%}
+  </body>
+</html>
