@@ -1,12 +1,13 @@
 title: SMP Negeri 8 Balikpapan
-author:
-  name: smpn8balikpapan
-  email: smpn8@smpn8balikpapan.sch.id
+author: Admin
+name: smpn8balikpapan
+email: smpn8@smpn8balikpapan.sch.id
+baseurl: "/smpn8balikpapan"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  SMPN 8 adalah sekolah Menengah Pertama manjadi sekolah Adiwiyata Mandiri
+  SMPN 8 adalah sekolah Menengah Pertama yang menjadi sekolah Adiwiyata Mandiri
   dan Sekolah Penggerak, 
   dilengkapi dengan tenaga pendidik berpengalaman dan 
   metode pembelajaran inovatif.
@@ -19,7 +20,36 @@ sambutan: >
   mengejar mimpi mereka. Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja 
   sama untuk membangun masa depan yang lebih baik bagi generasi muda.
 
-logo: /images/lgo.PNG
+profil-sekolah: >
+  SMP Negeri 8 Balikpapan adalah sekolah menengah pertama berakreditasi A dan
+  menerapkan Kurikulum Merdeka dalam pembelajarannya. Serta merupakan sekolah
+  Adiwiyata Mandiri dan Sekolah Penggerak yang terletak di Jl. Mulawarman No.14, RT.54,
+  Manggar, Kec. Balikpapan Timur, Kota Balikpapan. SMP Negeri 8 Balikpapan berkomitmen
+  untuk menciptakan lingkungan pendidikan yang baik dan nyaman bagi siswa dengan
+  berbagai fasilitas serta kegiatan yang dapat menunjang kegiatan belajar dan mengajar. Kami
+  berharap siswa dapat tumbuh menjadi pribadi yang terus berkembang setiap harinya dengan
+  didampingi oleh tenaga pendidik yang berpengalaman.
+
+fasilitas: >
+  Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
+  dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
+  membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
+  Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
+  yang luas untuk digunakan sebagai sarana pengembangan diri. Berikut kami beberapa daftar
+
+ekstrakurikuler: >
+  Di sekolah kami, akademik bukanlah satu-satunya hal yang dapat dipelajari,
+  terdapat berbagai kegiatan ekstrakurikuler yang dapat diikuti oleh para siswa untuk
+  mengembangkan bakat dan minat mereka di luar jam pelajaran. Mulai dari kegiatan yang
+  dapat meningkatkan keterampilan fisik dan sportivitas, kegiatan di bidang seni dan
+  budaya, serta kegiatan yang berfokus pada kepemimpinan dan kemanusiaan. Setiap
+  kegiatan dirancang untuk mengembangkan bakat, membangun karakter disiplin, kerja
+  sama tim, dan memberikan kesempatan kepada siswa untuk belajar dan berkembang
+  dalam lingkungan yang positif dan mendukung.
+
+
+logo: /images/logobg.png
+logo-2: /images/smpn8_new-foto/new-logo.png
 logofooter: /images/logobg4.png
 icon: /images/logobg.png
 
@@ -28,79 +58,80 @@ email: smpn8@smpn8balikpapan.sch.id
 phone: "(0542) 761902"
 
 menus:
-  - title: Home
+  - title: Beranda
     link: /
-  - title: Berita
-    link: /category/berita
-  - title: Tabloit
-    link: https://s.id/smpn8bpn
-  - title: Jadwal
-    link: "#jadwal"
-    submenus: 
-      - title: Siswa
-        link: /pages/jadwal-siswa
-      - title: Guru
-        link: /pages/jadwal-guru
   - title: Profil
-    link: /pages/profil
-  - title: PPDB
-    link: /pages/ppdb
+    link: "#"
+    submenus: 
+      - title: Tentang Sekolah
+        link: /pages/profil-sekolah
+      - title: Staff & Karyawan
+        link: /pages/profil-guru
+  - title: Berita
+    link: /pages/berita
+  - title: Pengumuman
+    link: /pages/pengumuman
+  - title: Informasi
+    link: "#"
+    submenus: 
+      - title: Ekstrakurikuler
+        link: /pages/ekstrakurikuler
+      - title: Prestasi Sekolah
+        link: /pages/prestasi
+      - title: Fasilitas Sekolah
+        link: /pages/fasilitas
+  - title: Galeri
+    link: /pages/galeri
   - title: Aplikasi
     link: https://cbt.smpn8balikpapan.sch.id/
 
 submenu:
   - title: Instagram
-    link: "https://www.instagram.com/?hl=id"
-    icon: /images/sosmed/ig.png
+    link: "https://www.instagram.com/smpnegeri8balikpapan"
+    icon: "fab fa-instagram"
   - title: Facebook
     link: "https://id-id.facebook.com/"
-    icon: /images/sosmed/ig.png
+    icon: "fab fa-facebook-f"
   - title: Youtube
-    link: "https://www.youtube.com/"
-    icon: /images/sosmed/twitter.png
+    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
+    icon: "fab fa-youtube"
   - title: Whatsapp
     link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
-    icon: /images/sosmed/wa.png
-  - title: Alumni
-    link: "#"
-    icon: /images/alumni.png
-  - title: Akademik
-    link: "#"
-    icon: /images/calendar.png
-  - title: PPDB
-    link: "#"
-    icon: /images/admission.png
+    icon: "fab fa-whatsapp"
+
 
 sliders:
-  - title: SMPN 8 Balikpapan
-    text: Selamat Datang
-    image: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
-    link: /category/berita
-    linktext: INFO TERBARU 
-  - title: SMPN 8 Balikpapan
-    text: Selamat Datang
-    image: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
-    link: /category/berita
-    linktext: INFO TERBARU
-  - title: SMPN 8 Balikpapan
-    text: Selamat Datang
-    image: /gallery/ftkarate.JPG
-    link: /category/berita
-    linktext: INFO TERBARU
+  - title: SMP Negeri 8 Balikpapan
+    text: Selamat Datang di
+    image: /images/AulaSmpn8.jpg
+    link: /pages/berita
+    linktext: Berita Terkini
+  - title: SMP Negeri 8 Balikpapan
+    text: Selamat Datang di
+    image: /images/LobySmpn8.jpg
+    link: /pages/berita
+    linktext: Berita Terkini
 
 galleries:
   - title: Foto 1
-    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
+    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 2
-    img: /gallery/WhatsApp%20Image%202023-02-15%20at%2015.26.30.jpeg
+    img: gallery/suasana_kantor.jpeg
   - title: Foto 3
-    img: /gallery/foto (3).jpeg
+    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
   - title: Foto 4
-    img: /gallery/foto (4).jpeg
+    img: gallery/foto (4).jpeg
+
+# Collections
+# collections:
+#   posts:
+#     output: true
+
+# categories: [pengumuman, berita, events, updates]
 
 jekyll-archives:
   enabled: all
-  layout: archive
+  layout: default
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

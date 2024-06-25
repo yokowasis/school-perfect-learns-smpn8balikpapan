@@ -1,0 +1,76 @@
+Update version 1.1 
+
+Navbar:
+    - Home
+    - Profil{
+        sambutan kepala sekolah,
+        latar belakang,
+        visi misi,
+        guru dan staff,
+    }
+    - Prestasi
+    - Berita{
+        lingkungan sekolah,
+        BULETIN
+    }
+    - PPDB / Tabloit
+    - Aplikasi
+
+Konten Home: 
+    - 3 foto atau lebih untuk landing page terbaru(foto depan sekolah, foto siswa prestasi, foto guru-guru)
+    - 
+
+Konten Profil:
+    - Foto depan sekolah
+    - Foto kepala sekolah dan wakil kepala sekolah
+    - Foto Pengajar
+    - Foto Staff
+    - Foto Karyawan
+    - Visi Misi
+    - Latar Belakang sekolah
+
+Konten Prestasi:
+    - Foto-foto siswa berprestasi beserta caption
+
+Konten Berita:
+    - Foto-foto kegiatan sekolah terbaru beserta caption
+
+a few things should do before host:
+# header.html -menu link add "{{site.baseurl}}/"
+# header.html -logo icon add "/smpn8balikpapan"
+# at menu, beranda in config.yml. add "/smpn8balikpapan"
+
+Update version 1.2
+
+NAVBAR:
+1. **Beranda**
+2. **Profil**
+   - Profil Sekolah (Logo, Tentang Sekolah, Visi dan Misi)
+   - Profil Staff dan Karyawan (Diatur sesuai dengan kemauan Mitra)
+3. **Berita**
+4.  **Pengumuman**
+   - Prosedur Pendaftaran (Syarat dan Ketentuan mendaftar)
+   - Formulir Pendaftaran Online
+4. **Informasi**
+   - Ekstrakurikuler
+   - Prestasi Sekolah
+   - Fasilitas Sekolah
+5. **Galeri** (Foto Sekolah, Kegiatan, dll) (https://www.w3schools.com/howto/howto_css_modal_images.asp)
+6. **Aplikasi**
+
+FOOTER:
+1. **Kontak Sekolah**
+   - Alamat Lengkap
+   - Nomor Telepon
+   - Email
+
+2. **Sosial Media**
+   - Ikon dan link ke akun sosial media sekolah (misalnya Facebook, Instagram, Twitter)
+
+3. **Hak Cipta**
+   - Informasi hak cipta dan tahun (A1 dan Pak Aidil, 2024)
+
+### Catatan Tambahan:
+- **Halaman Profil** dapat berisi informasi lebih detail tentang sejarah sekolah dan struktur organisasi.
+- **Halaman Pendaftaran** sebaiknya memiliki detail yang sangat jelas dan formulir pendaftaran online jika ada.
+- **Berita dan Pengumuman** bisa diupdate secara berkala untuk menjaga relevansi dan informasi terkini.

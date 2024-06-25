@@ -1,30 +1,256 @@
-{%- include slider.html -%} {%- include submenu.html -%}
+{%- include slider.html -%} 
 
 <!-- section -->
-<div class="section margin-top_50">
+<section id="mu-service">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 layout_padding_2">
-        <div class="full">
-          <div class="heading_main text_align_left">
-            <h2><span>Sambutan</span> Kepala Sekolah</h2>
+      <div class="col-lg-12 col-md-12">
+        <div class="mu-service-area">
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-laptop"></i></div>
+                <h3>Fasilitas</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/pelatihan3.jpg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>{{ site.fasilitas }}</p>
+              <a href="{{ site.baseurl }}/pages/fasilitas" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+              <!-- <a href="#" class="btn btn-primary btn-service rounded-pill text-white">Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a> -->
+            </div>
           </div>
-          <div class="full">
-            <p>{{site.sambutan}}</p>
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-school"></i></div>
+                <h3>Tentang Kami</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/AulaSmpn8.jpg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>{{ site.profil-sekolah }}</p>
+              <a href="{{ site.baseurl }}/pages/profil-sekolah" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+            </div>
+          </div>
+          <!-- Start single service -->
+          <div class="mu-service-single">
+            <div class="service-title">
+              <div class="d-md-inline-flex">
+                <div><i class="fas fa-campground"></i></div>
+                <h3>Ekstrakurikler</h3>
+              </div>
+            </div>
+            <div class="">
+              <img
+                src="{{ site.baseurl }}/images/smpn8_new-foto/ekstra-basket.jpg"
+                class="card-image"
+                alt=""
+              />
+            </div>
+            <div class="service-text">
+              <p>{{ site.ekstrakurikuler }}</p>
+              <a href="{{ site.baseurl }}/pages/ekstrakurikuler" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="full">
-          <img src="images/img2.png" alt="#" />
+    </div>
+  </div>
+</section>
+
+<!-- Book Appointment Start -->
+<div class="container-fluid appointment py-5">
+  <div class="container py-5">
+    <div class="row g-5 align-items-center justify-content-center mt-4">
+      <div class="col-lg-8 wow fadeInLeft " data-wow-delay="0.2">
+        <div class="section-title text-start">
+          <h4 class="sub-title pe-3 mb-3 fs-4 poppins-bolder">Lingkungan SMPN 8 Balikpapan</h4>
+          <div class="row g-4">
+            <div class="col-lg-5 col-md-5">
+              <div class="video h-100">
+                <img
+                  src="{{ site.baseurl }}/images/LobySmpn8_2.jpg"
+                  class="img-fluid rounded w-100 h-100"
+                  style="object-fit: cover"
+                  alt=""
+                />
+                <button
+                  type="button"
+                  class="btn btn-play"
+                  data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+                  data-bs-target="#videoModal"
+                >
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="d-flex flex-column h-100">
+                <div class="mb-4">
+                  <p class="mb-0 video1-text">
+                    Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
+                    berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
+                    terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
+                    Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja sama untuk membangun masa 
+                    depan yang lebih baik bagi generasi muda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.4s" style="max-width: 300px;">
+          <div class="team-item rounded">
+            <div class="team-img rounded-top">
+              <img
+                src="{{ site.baseurl }}/images/kepsek.jpeg"
+                class="img-fluid rounded-top w-100"
+                alt=""
+              />
+            </div>
+            <div class="team-content text-white text-center border border-top-0 rounded-bottom p-1 bg-secondarymain">
+              <h5 class="text-white poppins-normal pb-0">Kepala Sekolah</h5>
+              <p class="mb-0 text-white poppins-bold">Mugiyatno, S.Pd., M. M</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Video -->
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Video Lingkungan SMPN 8 Balikpapan</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- 16:9 aspect ratio -->
+        <div class="ratio ratio-16x9">
+          <!-- <iframe  id="video" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+          id="video"
+          allowfullscreen
+          allowscriptaccess=""
+          allow="autoplay"
+          ></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- end section -->
-<!-- section -->
-<div class="section layout_padding padding_bottom-0">
+<!-- Book Appointment End -->
+
+<!-------------- Featured News Slider Start -->
+<div class="container-fluid service py-5">
+  <div class="container py-5">
+    <div class="section-title mb-4 wow fadeIn" data-wow-delay="0.2s">
+      <div class="sub-style">
+        <h4 class="sub-title px-3 mb-0 fs-4 poppins-bolder">Berita Terkini</h4>
+      </div>
+    </div>
+    <div class="news-carousel owl-carousel">
+      {% assign berita_posts = site.posts | where: "categories", "Berita" %}
+      {% for post in berita_posts limit:4 %}
+          <div
+          class="wow fadeIn"
+          data-wow-delay="0.1s"
+          >
+            <div class="service-item d-flex justify-content-center">
+              <a class="service-img rounded" href="{{ post.url | relative_url }}">
+                <img
+                  src="{{ post.img | relative_url}}"
+                  class="img-fluid rounded w-100"
+                  alt="gambar"
+                />
+                <div class="service-content">
+                  <div class="text-white">
+                    <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+                    <p>{{post.title}}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+    <div class="news-detail row pt-5">
+      <div class="col-md-6">
+        <div class="underline-header">
+          <h4 class="poppins-bold">Berita lain</h4>
+          <div class="underline"></div>
+        </div>
+        {% assign berita_posts = site.posts | where: "categories", "Berita" %}
+        {% for post in berita_posts offset:4 limit:4 %}
+          <a class="mini-news" href="{{ post.url | relative_url }}">
+          <div class="mini-news-image"><img src="{{ post.img | relative_url}}" alt=""></div>
+          <div class="service-content">
+              <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+              <p>{{post.title}}</p>
+          </div>
+          </a>
+        {% endfor%}
+        <div class="more-news-detail">
+          <a href="{{site.baseurl}}/pages/berita" class="">Berita selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0">
+        <div class="underline-header">
+          <h4 class="poppins-bold">Pengumuman</h4>
+          <div class="underline"></div>
+        </div>
+        {% assign pengumuman_posts = site.posts | where: "categories", "Pengumuman" %}
+        {% for post in pengumuman_posts limit:4 %}
+          <a class="mini-news" href="{{ post.url | relative_url }}">
+          <!-- <div class="mini-news-image"><img src="{{site.baseurl}}{{ post.img }}" alt=""></div> -->
+          <div class="service-content">
+              <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+              <p>{{post.title}}</p>
+          </div>
+          </a>
+        {% endfor%}
+        <div class="more-news-detail">
+          <a href="{{site.baseurl}}/pages/pengumuman" class="">Pengumuman selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------------------- section -->
+<!-- <div class="section layout_padding padding_bottom-0">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -38,7 +264,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div id="demo" class="carousel slide" data-ride="carousel">
-          <!-- The slideshow -->
+          ---The slideshow
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -51,7 +277,7 @@
                       <p><a href="{{ post.url | relative_url }}">{{ post.title }}-{{i | modulo:1}}</a></p>
                     </div>
                   </div>
-                  <!-- if i mod 4 = 0 -->
+                  ---if i mod 4 = 0
                   {% assign temp = i | modulo:4 %}
                   {% if  temp == 0 %}
                     </div>
@@ -63,7 +289,7 @@
               </div>
             </div>
           </div>
-          <!-- Left and right controls -->
+          ---Left and right controls
           <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
@@ -74,28 +300,29 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- end section -->
+
 <!-- section -->
-<div class="section layout_padding">
+<!-- <div class="section layout_padding theme_bg">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="full">
           <div class="heading_main text_align_center">
-            <h2><span>Gallery </span>Spadan </h2>
+            <h2 class="blue"><span>Gallery </span>Spadan </h2>
           </div>
         </div>
       </div>
       {% for gallery in site.galleries %}
       <div class="col-md-3">
         <div class="full blog_img_popular">
-          <a href="{{ gallery.img }}" target="_blank"><img class="img-responsive" src="{{gallery.img}}" alt="#" /></a>
+          <a href="{{ site.baseurl }}/{{ gallery.img }}" target="_blank"><img class="img-responsive" src="{{ site.baseurl }}/{{gallery.img}}" alt="#" /></a>
           <h4>{{gallery.title}}</h4>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->
 <!-- end section -->

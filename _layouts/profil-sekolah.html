@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic -->
+  {%- include head.html -%}
+
+  <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    {%- include header-2.html -%}
+    <div style="margin-top: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="defaultlayout">
+              <div>
+                <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+              </div>
+              <div class="school-profil-image mb-4 rounded">
+                  <img src="{{ page.img | relative_url}}" alt="foto loby sekolah" class="rounded">
+              </div>
+              <div class="text-justify">
+                {{ site.profil-sekolah}}
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- include footer.html -%} {%- include footer-script.html -%}
+  </body>
+</html>
