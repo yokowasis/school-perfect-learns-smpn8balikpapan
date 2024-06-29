@@ -291,8 +291,35 @@ button:focus {
 /*------------------------------------------------------------------ 
    LOADER 
 -------------------------------------------------------------------*/
-
 #preloader {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 11000;
+	position: fixed;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+
+.loader {
+    display: block;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto;
+    -webkit-transform-style: preserve-3d;
+}
+
+.loader img {
+    width: 100%;
+    height: auto;
+}
+/* #preloader {
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -309,9 +336,8 @@ button:focus {
 }
 
 .loader {
-    display: blo;
     flex-wrap: wrap;
-    height: 150px;
+    height: 400px;
     width: auto;
     -webkit-transform-style: preserve-3d;
 }
@@ -334,7 +360,7 @@ button:focus {
 	.loader img {
 		height: 40%;
 	}
-}
+} */
 
 .box {
 	position: absolute;
