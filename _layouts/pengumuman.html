@@ -25,7 +25,7 @@ layout: default
               <div class="post-content rounded-bottom p-4">
                   <p class="mb-2 poppins-bold news-title">{{ post.title }}</p>
                   <div class="separator"></div>
-                  <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+                  <!--<span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span>--><span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
                   <div class="news-text-content">
                     {{ post.excerpt }}
                   </div>
@@ -35,7 +35,7 @@ layout: default
         {% else %}
         <a class="mini-news" href="{{ post.url | relative_url }}">
           <div class="service-content">
-              <span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span> <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
+              <!--<span class="user-news-post"><i class="fas fa-user"></i>{{post.author}}</span>--><span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span>
               <p>{{post.title}}</p>
           </div>
           </a>
