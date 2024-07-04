@@ -744,7 +744,7 @@ a.nav-item.nav-link {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-top: 11px;
+    margin-top: 12px;
     margin-left: -100px;
     border: 1px solid var(--bs-primary) !important;
 }
@@ -756,7 +756,7 @@ a.nav-item.nav-link {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-top: 3px;
+    margin-top: 4px;
     margin-left: -50px;
     border: 1px solid var(--bs-primary) !important;
 }
@@ -1931,6 +1931,92 @@ a.nav-item.nav-link {
 	}
 } */
 
+/* --------------------- Gallery Pages  */
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: box-shadow 0.3s ease-in-out;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery img:hover {
+	cursor: pointer;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+	
+}
+#imageModal .modal{
+	overflow: hidden;
+}
+#imageModal .modal-body img{
+	aspect-ratio: inherit;
+}
+#imageModal .modal-body img:hover{
+	cursor:default;
+}
+#imageModal .modal-open .modal {
+top: 50%;
+left: 0;
+transform: translatey(-50%);
+width: 100%;
+height: auto;
+overflow-y: hidden;
+}
+
+#imageModal .modal.show{
+	display: flex !important;
+}
+
+#imageModal .modal-dialog{
+	margin-top: 6rem !important;
+	margin-bottom: 6rem !important;
+}
+
+#imageModal .modal-content{
+	background: transparent;
+	border: transparent;
+}
+#imageModal .modal-content img {
+	max-height: 60vh;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#imageModal .modal-body{
+	overflow: hidden;
+	display: flex;
+	padding: 0;
+	flex-direction: column;
+}
+#imageModal .modal-head{
+	display:flex;
+	align-items:end;
+	justify-content:end;
+	padding:.5rem 0;
+}
+#imageModal .modal-foot{
+	position: absolute;
+	display: flex;
+	align-items: end;
+	bottom: 0;
+	padding-top:.2rem;
+	overflow-y:hidden;
+	bottom: -50px;
+	width: 100% !important;
+	justify-content: center;
+}
+#imageModal .modal-foot p{
+	font-size: .7rem;
+	color: #ffffffee;
+	text-align: center;
+	line-height: 1rem;
+}
+
+#imageModal .btn-galery{
+	display: flex;
+	justify-content: center;
+}
 
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 

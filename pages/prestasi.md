@@ -1,3 +1,4 @@
 ---
-layout: default
+layout: prestasi
+title: Prestasi
 ---

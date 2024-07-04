@@ -1,0 +1,183 @@
+---
+layout: default
+---
+
+<style>
+    .employe img {
+        max-height: 250px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .employe img:hover {
+		cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+    }
+    .employe #staffModal img:hover {
+		cursor:default;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+	/* -------------------------- */
+    .modal-body img {
+        aspect-ratio: inherit;
+    }
+    .modal-body img:hover {
+        cursor: default;
+    }
+    .modal-open .modal {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .modal.show {
+        display: flex !important;
+    }
+    #staffModal .modal-dialog {
+        margin-top: 6rem !important;
+        margin-bottom: 6rem !important;
+    }
+    .modal-content {
+        background: transparent;
+        border: transparent;
+    }
+    .modal-content img {
+		height: auto;
+		width: 40%;
+		object-fit: cover;
+		object-position: center;
+    }
+    .modal-body {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-head {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: .5rem 0;
+    }
+    .modal-foot {
+		position: relative;
+		display: flex;
+		align-items: end;
+		margin-top: 0;
+		overflow-y: hidden;
+		width: 100% !important;
+		justify-content: center;
+    }
+    .modal-foot p {
+		font-size: .7rem;
+        color: #0000009e;
+        text-align: center;
+        line-height: 1rem;
+		margin-bottom: 0;
+    }
+	.modal-foot-list {
+		position: relative;
+		display: flex;
+		align-items: end;
+		margin-top: 0;
+		overflow-y: hidden;
+		width: 100% !important;
+		justify-content: start;
+	}
+	.modal-foot-list p {
+		font-size: .7rem;
+		color: #0000009e;
+		text-align: start;
+		line-height: 1rem;
+		margin-bottom: 0;
+		margin-top: 0px;
+	}
+    .modal-foot p#modalList {
+        font-size: .7rem;
+        color: #0000009e;
+        text-align: center;
+        line-height: 1rem;
+		margin-top: 10px;
+		margin-bottom: 0;
+    }
+
+    .employe-name {
+		position: relative;
+		background: linear-gradient(rgb(0, 0, 0, 0), #ed8660);
+		padding: 0px 0px 4px 0px;
+		bottom: 0;
+		width: 100%;
+		transform: translateY(-100%);
+		text-align: center;
+		padding-top: 7px;
+    }
+    .employe-name p {
+		font-size: 12px;
+		line-height: .8rem;
+		margin-bottom: 10px;
+		transform: translateY(5px);
+    }
+    @media screen and (max-width: 600px) {
+        .employe-name p {
+            margin-top: 0px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .modal-bf {
+            max-height: 400px;
+            width: 500px;
+        }
+    }
+    .modal-bf {
+        max-height: 500px;
+		max-width: 350px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 0px 20px;
+    }
+</style>
+
+<div class="container my-5">
+    <h1 class="text-center">{{ page.title | escape }}</h1>
+    <div class="row justify-content-center employe">
+        {% for employe in site.employees %}
+        <div class="col-6 col-md-4 col-lg-3 mb-4 position-relative">
+            <img src="{{site.baseurl}}{{employe.img}}" alt="{{employe.name}}" class="img-fluid rounded-1 wow fadeIn" data-bs-toggle="modal" data-bs-target="#staffModal" data-subjects="{{ employe.subjects }}" data-status="{{ employe.status}}" data-src="{{site.baseurl}}{{employe.img}}" data-wow-delay="0.2s">
+            <div class="employe-name rounded-bottom">
+				<p class="poppins-bold text-white d-block">{{employe.status}}</p>
+				<p class="poppins-bold text-white">{{employe.name}}</p>
+			</div>
+        </div>
+        {% endfor %}
+        <div class="modal justify-content-center" id="staffModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content fadeIn">
+                    <div class="modal-head">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-bf rounded-1">
+                            <img id="modalImage" src="" alt="">
+                            <div class="modal-foot">
+								<p id="modalStatus" class="poppins-normal">Guru</p>
+                            </div>
+                            <div class="modal-foot">
+								<p id="modalText" class="poppins-normal"></p>
+                            </div>
+							<div class="modal-foot-list">
+								<p id="modalList" class="poppins-normal" style="margin-bottom: 15px;">-B. Indonesia-Matematika-IPA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
