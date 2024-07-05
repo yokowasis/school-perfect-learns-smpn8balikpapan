@@ -8,9 +8,10 @@ layout: default
         width: 100%;
         height: auto;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
         transition: box-shadow 0.3s ease-in-out;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        aspect-ratio: 3/4;
     }
     .employe img:hover {
 		cursor: pointer;
@@ -50,7 +51,8 @@ layout: default
 		height: auto;
 		width: 40%;
 		object-fit: cover;
-		object-position: center;
+		object-position: top;
+        aspect-ratio: 3/4;
     }
     .modal-body {
         display: flex;
@@ -112,7 +114,7 @@ layout: default
 		padding: 0px 0px 4px 0px;
 		bottom: 0;
 		width: 100%;
-		transform: translateY(-100%);
+		transform: translateY(-99%);
 		text-align: center;
 		padding-top: 7px;
     }
@@ -127,20 +129,20 @@ layout: default
             margin-top: 0px;
         }
     }
-    @media screen and (min-width: 992px) {
+    /* @media screen and (min-width: 992px) {
         .modal-bf {
             max-height: 400px;
-            width: 500px;
+            width: 400px;
         }
-    }
+    } */
     .modal-bf {
         max-height: 500px;
-		max-width: 350px;
+		width: 330px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		background: rgba(255, 255, 255, 0.95);
-		padding: 0px 20px;
+		padding: 0px 35px;
     }
 </style>
 
@@ -148,7 +150,7 @@ layout: default
     <h1 class="text-center">{{ page.title | escape }}</h1>
     <div class="row justify-content-center employe">
         {% for employe in site.employees %}
-        <div class="col-6 col-md-4 col-lg-3 mb-4 position-relative">
+        <div class="col-6 col-md-4 col-lg-3 position-relative">
             <img src="{{site.baseurl}}{{employe.img}}" alt="{{employe.name}}" class="img-fluid rounded-1 wow fadeIn" data-bs-toggle="modal" data-bs-target="#staffModal" data-subjects="{{ employe.subjects }}" data-status="{{ employe.status}}" data-src="{{site.baseurl}}{{employe.img}}" data-wow-delay="0.2s">
             <div class="employe-name rounded-bottom">
 				<p class="poppins-bold text-white d-block">{{employe.status}}</p>
