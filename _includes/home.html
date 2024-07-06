@@ -84,7 +84,7 @@
             <div class="col-lg-5 col-md-5">
               <div class="video h-100">
                 <img
-                  src="{{ site.baseurl }}/images/LobySmpn8_2.jpg"
+                  src="{{ site.baseurl }}{{ site.thumbnail-video }}"
                   class="img-fluid rounded w-100 h-100"
                   style="object-fit: cover"
                   alt=""
@@ -93,7 +93,7 @@
                   type="button"
                   class="btn btn-play"
                   data-bs-toggle="modal"
-                  data-src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+                  data-src={{site.link-video}}
                   data-bs-target="#videoModal"
                 >
                   <span></span>
@@ -104,11 +104,7 @@
               <div class="d-flex flex-column h-100">
                 <div class="mb-4">
                   <p class="mb-0 video1-text">
-                    Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
-                    berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
-                    terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
-                    Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja sama untuk membangun masa 
-                    depan yang lebih baik bagi generasi muda.
+                    {{site.description-video}}
                   </p>
                 </div>
               </div>
@@ -121,14 +117,14 @@
           <div class="team-item rounded">
             <div class="team-img rounded-top">
               <img
-                src="{{ site.baseurl }}/images/kepsek.jpeg"
+                src="{{ site.baseurl }}{{site.foto-kepala-sekolah}}"
                 class="img-fluid rounded-top w-100"
                 alt=""
               />
             </div>
             <div class="team-content text-white text-center border border-top-0 rounded-bottom p-1 bg-secondarymain">
               <h5 class="text-white poppins-normal pb-0">Kepala Sekolah</h5>
-              <p class="mb-0 text-white poppins-bold">Mugiyatno, S.Pd., M. M</p>
+              <p class="mb-0 text-white poppins-bold">{{site.nama-kepala-sekolah}}</p>
             </div>
           </div>
       </div>
@@ -146,7 +142,7 @@
   <div class="modal-dialog">
     <div class="modal-content rounded-0">
       <div class="modal-header">
-        <h5 class="modal-title poppins-bold pb-0" id="exampleModalLabel">Video Lingkungan SMPN 8 Balikpapan</h5>
+        <h5 class="modal-title poppins-bold pb-0" id="exampleModalLabel">{{site.title-video}}</h5>
         <button
           type="button"
           class="btn-close"
@@ -160,7 +156,7 @@
           <!-- <iframe  id="video" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
           <iframe
           class="embed-responsive-item"
-          src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+          src={{site.link-video}}
           id="video"
           allowfullscreen
           allowscriptaccess=""

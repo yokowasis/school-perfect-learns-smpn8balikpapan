@@ -5,9 +5,9 @@
        <div class="row g-5">
          <div class="col-md-5">
            <div class="footer-item d-flex flex-column">
-             <img src="{{site.baseurl}}/images/smpn8_new-foto/new-logo.png" alt="SMPN8 Balikpapan" style="width: 80%;">
+             <img src="{{site.baseurl}}{{site.logo-footer}}" alt="SMPN8 Balikpapan" style="width: 80%;">
                <p class="footer-description">
-                 {{site.description}}
+                 {{site.description-footer}}
                </p>
            </div>
          </div>
@@ -18,7 +18,7 @@
              <p class="mb-2 text-white"><i class="fas fa-phone-alt me-3"></i>{{site.phone}}</p>
              <p class="mb-2 text-white"><i class="fa fa-envelope me-3"></i>{{site.email}}</p>
              <div class="d-flex pt-2">
-               {% for menu in site.submenu %}
+               {% for menu in site.socmed %}
                <a href="{{menu.link}}" class="btn btn-light btn-square border rounded-circle nav-fill me-3" ><i class="{{menu.icon}}"></i></a>
                {% endfor %}
              </div>

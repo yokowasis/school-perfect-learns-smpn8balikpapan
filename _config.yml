@@ -1,24 +1,85 @@
 title: SMP Negeri 8 Balikpapan
-author: Admin
 name: smpn8balikpapan
+baseurl: "/smpn8balikpapan"
+alamat: Jl. Mulawarman Rt.54 No 14 Manggar Balikpapan Timur
 email: smpn8@smpn8balikpapan.sch.id
-# baseurl: "/smpn8balikpapan"
-
+phone: "(0542) 761902"
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  SMPN 8 adalah sekolah Menengah Pertama yang menjadi sekolah Adiwiyata Mandiri
-  dan Sekolah Penggerak, 
-  dilengkapi dengan tenaga pendidik berpengalaman dan 
-  metode pembelajaran inovatif.
 
-sambutan: >
-  Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, berprestasi, berbudaya dan cinta lingkungan
-  Kami sangat berkomitmen untuk memberikan pendidikan terbaik bagi para siswa kami dengan 
-  fasilitas yang memadai dan tenaga pendidik yang berpengalaman. Kami percaya bahwa setiap 
-  siswa memiliki potensi yang luar biasa dan kami akan terus bekerja keras untuk membantu mereka 
-  mengejar mimpi mereka. Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja 
-  sama untuk membangun masa depan yang lebih baik bagi generasi muda.
+socmed:
+  - title: Instagram
+    link: "https://www.instagram.com/smpnegeri8balikpapan"
+    icon: "fab fa-instagram"
+  - title: Facebook
+    link: "https://id-id.facebook.com/"
+    icon: "fab fa-facebook-f"
+  - title: Youtube
+    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
+    icon: "fab fa-youtube"
+  - title: Whatsapp
+    link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
+    icon: "fab fa-whatsapp"
+
+#-----------------------------------Navbar----------------------#
+logo-navbar: /images/smpn8_new-foto/new-logo.png
+icon: /images/logobg.png
+#-----------------------------------End-Navbar----------------------#
+
+
+#----------------------------------Footer----------------------#
+logo-footer: /images/smpn8_new-foto/new-logo.png
+description-footer: >
+  SMPN 8 adalah sekolah Menengah Pertama yang menjadi sekolah 
+  Adiwiyata Mandiri dan Sekolah Penggerak, dilengkapi dengan 
+  tenaga pendidik berpengalaman dan metode pembelajaran inovatif.
+#-----------------------------------End-Footer----------------------#
+
+
+#----------------------------------Navbar_Menu_Link----------#
+menus:
+  - title: Beranda
+    link: /
+  - title: Profil
+    link: "#"
+    submenus: 
+      - title: Tentang Sekolah
+        link: /pages/profil-sekolah
+      - title: Guru & Staff
+        link: /pages/profil-guru
+  - title: Berita
+    link: /pages/berita
+  - title: Pengumuman
+    link: /pages/pengumuman
+  - title: Informasi
+    link: "#"
+    submenus: 
+      - title: Ekstrakurikuler
+        link: /pages/ekstrakurikuler
+      - title: Prestasi Sekolah
+        link: /pages/prestasi
+      - title: Fasilitas Sekolah
+        link: /pages/fasilitas
+  - title: Galeri
+    link: /pages/galeri
+  - title: Aplikasi
+    link: https://cbt.smpn8balikpapan.sch.id/
+#----------------------------------End-Navbar_Menu_Link----------#
+
+
+#----------------------------------Halaman_Beranda----------#
+sliders:
+  - title: SMP Negeri 8 Balikpapan
+    text: Selamat Datang di
+    image: /images/AulaSmpn8.jpg
+    link: /pages/berita
+    linktext: Berita Terkini
+  - title: SMP Negeri 8 Balikpapan
+    text: Selamat Datang di
+    image: /images/LobySmpn8.jpg
+    link: /pages/berita
+    linktext: Berita Terkini
+
 
 profil-sekolah: >
   SMP Negeri 8 Balikpapan adalah sekolah menengah pertama berakreditasi A dan
@@ -47,108 +108,77 @@ ekstrakurikuler: >
   sama tim, dan memberikan kesempatan kepada siswa untuk belajar dan berkembang
   dalam lingkungan yang positif dan mendukung.
 
+#foto dan nama kepala sekolah
+nama-kepala-sekolah: Mugiyatno, S.Pd., M. M
+foto-kepala-sekolah: /images/kepsek.jpeg
 
-logo: /images/logobg.png
-logo-2: /images/smpn8_new-foto/new-logo.png
-logofooter: /images/logobg4.png
-icon: /images/logobg.png
+#video sekolah
+link-video: "https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+thumbnail-video: /images/LobySmpn8_2.jpg
+title-video: Video Lingkungan SMPN 8 Balikpapan
 
-alamat: Jl. Mulawarman Rt.54 No 14 Manggar Balikpapan Timur
-email: smpn8@smpn8balikpapan.sch.id
-phone: "(0542) 761902"
-
-menus:
-  - title: Beranda
-    link: /
-  - title: Profil
-    link: "#"
-    submenus: 
-      - title: Tentang Sekolah
-        link: /pages/profil-sekolah
-      - title: Guru & Staff
-        link: /pages/profil-guru
-  - title: Berita
-    link: /pages/berita
-  - title: Pengumuman
-    link: /pages/pengumuman
-  - title: Informasi
-    link: "#"
-    submenus: 
-      - title: Ekstrakurikuler
-        link: /pages/ekstrakurikuler
-      - title: Prestasi Sekolah
-        link: /pages/prestasi
-      - title: Fasilitas Sekolah
-        link: /pages/fasilitas
-  - title: Galeri
-    link: /pages/galeri
-  - title: Aplikasi
-    link: https://cbt.smpn8balikpapan.sch.id/
-
-submenu:
-  - title: Instagram
-    link: "https://www.instagram.com/smpnegeri8balikpapan"
-    icon: "fab fa-instagram"
-  - title: Facebook
-    link: "https://id-id.facebook.com/"
-    icon: "fab fa-facebook-f"
-  - title: Youtube
-    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
-    icon: "fab fa-youtube"
-  - title: Whatsapp
-    link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
-    icon: "fab fa-whatsapp"
+description-video: >
+  Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
+  berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
+  terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
+  Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja sama untuk membangun masa 
+  depan yang lebih baik bagi generasi muda.
+#----------------------------------End-Halaman_Beranda----------#
 
 
-sliders:
-  - title: SMP Negeri 8 Balikpapan
-    text: Selamat Datang di
-    image: /images/AulaSmpn8.jpg
-    link: /pages/berita
-    linktext: Berita Terkini
-  - title: SMP Negeri 8 Balikpapan
-    text: Selamat Datang di
-    image: /images/LobySmpn8.jpg
-    link: /pages/berita
-    linktext: Berita Terkini
-
+#----------------------------------Halaman_Galeri----------#
 galleries:
   - title: Loby SMPN 8
     img: /images/LobySmpn8.jpg
+
   - title: Ikrar Anti Perundungan
     img: /images/smpn8_new-foto/ikrar-anti-perundungan.jpg
+
   - title: Pelatihan Desain UI/UX oleh Mahasiswa ITK
     img: /images/pelatihan3.jpg
+
   - title: Pelaksanaan RAKERNAS APEKSI ke-XVII
     img: /images/galeri/Pelaksanaan RAKERNAS APEKSI ke-XVII.jpg
+
   - title: Tim SMPN 8 juara 1 Trofeo dan juara 2 Turnamen Futsal
     img: /images/galeri/Tim SMPN 8 juara 1 Trofeo dan juara 2 Turnamen Futsal.jpg
+
   - title: Projek Penguatan Profil Pelajar Pancasila
     img: /images/galeri/Projek Penguatan Profil Pelajar Pancasila.jpg
+    
   - title: PII Project Leadership Basic Training 2023
     img: /images/smpn8_new-foto/event_project-leadership-training.jpg
+#----------------------------------End-Halaman_Galeri----------#
 
+
+
+#----------------------------------Halaman_Staff&Guru----------#
 employees:
   - status: Pap
     name: Ansel, S.Pd.T.
     img: /images/guru-staff/Ansel.jpeg
     subjects: -Menggambar-Mewing
+
   - status: Guru Mewing
     name: Haqi, S.Pd.M.
     img: /images/guru-staff/Haqi.jpeg
     subjects: -Sigma-Ohio Skibidi Toilet
+
   - status: Guru Mobile Legend
     name: Raisha, S.Pd.ML
     img: /images/guru-staff/Raisha.jpeg
     subjects: -Lylia-Angela
+
   - status: Satpam
     name: Dr. Putu, M.Pd.I
     img: /images/guru-staff/Putu.jpeg
     subjects: -Menjaga Lingkungan Sekolah
+
   - status: Cyber Security
     name: Bagas, S.Kom, M.Kom
     img: /images/guru-staff/Bagas.jpeg
     subjects: -Government Web Security-Ethical Hacking-Designer
+#----------------------------------End-Halaman_Staff&Guru----------#
 
 
 # Collections
@@ -179,7 +209,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
 
-copyright: © copyright 2023 smpn8balikpapan
 
 # Theme-specific settings
 
