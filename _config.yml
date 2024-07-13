@@ -60,6 +60,8 @@ phone: "(0542) 761902"
 menus:
   - title: Beranda
     link: /
+  - title: Sekolah Penggerak
+    link: /pages/sekolah-penggerak
   - title: Profil
     link: "#"
     submenus: 
@@ -82,8 +84,6 @@ menus:
         link: /pages/fasilitas
   - title: Galeri
     link: /pages/galeri
-  - title: Aplikasi
-    link: https://cbt.smpn8balikpapan.sch.id/
 
 submenu:
   - title: Instagram
