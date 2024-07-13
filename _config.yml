@@ -60,13 +60,15 @@ phone: "(0542) 761902"
 menus:
   - title: Beranda
     link: /
-  - title: Sekolah Penggerak
-    link: /pages/sekolah-penggerak
   - title: Profil
     link: "#"
     submenus: 
       - title: Tentang Sekolah
         link: /pages/profil-sekolah
+      - title: Sekolah Penggerak
+        link: /pages/sekolah-penggerak
+      - title: Sekolah Adiwiyata
+        link: /pages/sekolah-adiwiyata
       - title: Staff & Karyawan
         link: /pages/profil-guru
   - title: Berita
