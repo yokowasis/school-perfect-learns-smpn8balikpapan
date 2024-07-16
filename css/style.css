@@ -1592,6 +1592,15 @@ a.nav-item.nav-link {
 	overflow: hidden;
 	border-radius:10%;
 }
+
+@media (min-width:768px){
+	.mini-news-image{
+		height: 70px;
+		width: 70px;
+		min-width: 70px;
+	}
+}
+
 .mini-news-image img{
 	transition: 0.5s;
 	height: 100%;
@@ -2024,6 +2033,143 @@ overflow-y: hidden;
 	display: flex;
 	justify-content: center;
 }
+
+/* ---------Employes Page */
+.employe img {
+	max-height: 250px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: top;
+	transition: box-shadow 0.3s ease-in-out;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	aspect-ratio: 3/4;
+}
+.employe img:hover {
+	cursor: pointer;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+.employe #staffModal img:hover {
+	cursor:default;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.employe .modal-body img {
+	aspect-ratio: inherit;
+}
+.employe .modal-body img:hover {
+	cursor: default;
+}
+.employe .modal-open .modal {
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+}
+.employe .modal.show {
+	display: flex !important;
+}
+.employe #staffModal .modal-dialog {
+	margin-top: 6rem !important;
+	margin-bottom: 6rem !important;
+}
+.employe .modal-content {
+	background: transparent;
+	border: transparent;
+}
+.employe .modal-content img {
+	height: auto;
+	width: 40%;
+	object-fit: cover;
+	object-position: top;
+	aspect-ratio: 3/4;
+}
+.employe .modal-body {
+	display: flex;
+	padding: 0;
+	flex-direction: column;
+	align-items: center;
+}
+.employe .modal-head {
+	display: flex;
+	align-items: end;
+	justify-content: end;
+	padding: .5rem 0;
+}
+.employe .modal-foot {
+	position: relative;
+	display: flex;
+	align-items: end;
+	margin-top: 0;
+	overflow-y: hidden;
+	width: 100% !important;
+	justify-content: center;
+}
+.employe .modal-foot p {
+	font-size: .7rem;
+	color: #0000009e;
+	text-align: center;
+	line-height: 1rem;
+	margin-bottom: 0;
+}
+.employe .modal-foot-list {
+	position: relative;
+	display: flex;
+	align-items: end;
+	margin-top: 0;
+	overflow-y: hidden;
+	width: 100% !important;
+	justify-content: start;
+}
+.employe .modal-foot-list p {
+	font-size: .7rem;
+	color: #0000009e;
+	text-align: start;
+	line-height: 1rem;
+	margin-bottom: 0;
+	margin-top: 0px;
+}
+.employe .modal-foot p#modalList {
+	font-size: .7rem;
+	color: #0000009e;
+	text-align: center;
+	line-height: 1rem;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.employe .employe-name {
+	position: relative;
+	background: linear-gradient(rgb(0, 0, 0, 0), #ed8660);
+	padding: 0px 0px 4px 0px;
+	bottom: 0;
+	width: 100%;
+	transform: translateY(-99%);
+	text-align: center;
+	padding-top: 7px;
+}
+.employe .employe-name p {
+	font-size: 12px;
+	line-height: .8rem;
+	margin-bottom: 10px;
+	transform: translateY(5px);
+}
+@media screen and (max-width: 600px) {
+	.employe .employe-name p {
+		margin-top: 0px;
+	}
+}
+.employe .modal-bf {
+	max-height: 500px;
+	width: 330px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.95);
+	padding: 0px 35px;
+}
+/* ---------End Employes Page */
 
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 

@@ -3,6 +3,12 @@ layout: fasilitas
 title: Fasilitas
 ---
 
+Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
+dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
+membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
+Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
+yang luas untuk digunakan sebagai sarana pengembangan diri.
+
 Berikut Fasilitas yang ada di Sekolah kami:
 
 | No. | Tempat Utama                         | No. | Tempat Lainnya                           |

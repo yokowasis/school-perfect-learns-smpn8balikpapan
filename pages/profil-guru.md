@@ -1,6 +1,6 @@
 ---
 layout: profil-guru
-title: Guru dan Staff
+title: Profil Guru
 ---
 
 Hello World

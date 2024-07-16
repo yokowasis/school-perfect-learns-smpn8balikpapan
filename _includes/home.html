@@ -6,67 +6,29 @@
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <div class="mu-service-area">
+          {% for service in site.three-services %}
           <!-- Start single service -->
           <div class="mu-service-single">
             <div class="service-title">
               <div class="d-md-inline-flex">
-                <div><i class="fas fa-laptop"></i></div>
-                <h3>Fasilitas</h3>
+                <div><i class="{{service.logo}}"></i></div>
+                <h3>{{service.title}}</h3>
               </div>
             </div>
             <div class="">
               <img
-                src="{{ site.baseurl }}/images/pelatihan3.jpg"
+                src="{{ site.baseurl }}{{service.image}}"
                 class="card-image"
                 alt=""
               />
             </div>
             <div class="service-text">
-              <p>{{ site.fasilitas }}</p>
-              <a href="{{ site.baseurl }}/pages/fasilitas" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+              <p>{{ service.text }}</p>
+              <a href="{{ site.baseurl }}{{service.link}}" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
               <!-- <a href="#" class="btn btn-primary btn-service rounded-pill text-white">Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a> -->
             </div>
           </div>
-          <!-- Start single service -->
-          <div class="mu-service-single">
-            <div class="service-title">
-              <div class="d-md-inline-flex">
-                <div><i class="fas fa-school"></i></div>
-                <h3>Tentang Kami</h3>
-              </div>
-            </div>
-            <div class="">
-              <img
-                src="{{ site.baseurl }}/images/AulaSmpn8.jpg"
-                class="card-image"
-                alt=""
-              />
-            </div>
-            <div class="service-text">
-              <p>{{ site.profil-sekolah }}</p>
-              <a href="{{ site.baseurl }}/pages/profil-sekolah" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
-            </div>
-          </div>
-          <!-- Start single service -->
-          <div class="mu-service-single">
-            <div class="service-title">
-              <div class="d-md-inline-flex">
-                <div><i class="fas fa-campground"></i></div>
-                <h3>Ekstrakurikler</h3>
-              </div>
-            </div>
-            <div class="">
-              <img
-                src="{{ site.baseurl }}/images/smpn8_new-foto/ekstra-basket.jpg"
-                class="card-image"
-                alt=""
-              />
-            </div>
-            <div class="service-text">
-              <p>{{ site.ekstrakurikuler }}</p>
-              <a href="{{ site.baseurl }}/pages/ekstrakurikuler" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>

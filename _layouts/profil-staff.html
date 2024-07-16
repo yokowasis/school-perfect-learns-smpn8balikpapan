@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="container my-5">
+    <h1 class="text-center">{{ page.title | escape }}</h1>
+    <div class="row justify-content-center employe">
+        {% for employe in site.employees-staff %}
+        <div class="col-6 col-md-4 col-lg-3 position-relative">
+            <img src="{{site.baseurl}}{{employe.img}}" alt="{{employe.name}}" class="img-fluid rounded-1 wow fadeIn" data-bs-toggle="modal" data-bs-target="#staffModal" data-subjects="{{ employe.subjects }}" data-status="{{ employe.status}}" data-src="{{site.baseurl}}{{employe.img}}" data-wow-delay="0.2s">
+            <div class="employe-name rounded-bottom">
+				<p class="poppins-bold text-white d-block">{{employe.status}}</p>
+				<p class="poppins-bold text-white">{{employe.name}}</p>
+			</div>
+        </div>
+        {% endfor %}
+        <div class="modal justify-content-center" id="staffModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content fadeIn">
+                    <div class="modal-head">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-bf rounded-1">
+                            <img id="modalImage" src="" alt="">
+                            <div class="modal-foot">
+								<p id="modalStatus" class="poppins-normal">Guru</p>
+                            </div>
+                            <div class="modal-foot">
+								<p id="modalText" class="poppins-normal"></p>
+                            </div>
+							<div class="modal-foot-list">
+								<p id="modalList" class="poppins-normal" style="margin-bottom: 15px;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
