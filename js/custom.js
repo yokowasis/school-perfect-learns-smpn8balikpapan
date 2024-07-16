@@ -364,6 +364,76 @@
 		$("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
 		return false;
 	  });
+	  
+	  $(document).ready(function () {
+        // Event listener for image click
+        $('.gallery img').on('click', function () {
+            var src = $(this).data('src');
+            var alt = $(this).attr('alt');
+			// var title = $(this).data('title');
+
+            // Update the modal title
+            // $('#imageModalLabel').text(title);
+
+            // Update the modal title
+            $('#modalText').text(alt);
+
+            // Update the modal image
+            $('#modalImage').attr('src', src);
+            $('#modalImage').attr('alt', alt);
+
+            // Show the modal
+            $('#imageModal').modal('show');
+        });
+
+        $('#imageModal').on('shown.bs.modal', function () {
+            // Set the width of the modal text to match the image width
+            var imgWidth = document.getElementById("modalImage").scrollWidth;
+			$(".modal-foot").css("width", imgWidth + "px");
+        });
+
+        $('#imageModal').on('hidden.bs.modal', function () {
+            $('#modalImage').attr('src', '');
+        });
+    });
+	/-----------------/ 
+	$(document).ready(function () {
+		$('.employe img').on('click', function () {
+			var src = $(this).data('src');
+			var alt = $(this).attr('alt');
+			var subjects = $(this).data('subjects');
+			var status = $(this).data('status');
+			// var title = $(this).data('title');
+
+			// Update the modal title
+			// $('#imageModalLabel').text(title);
+
+			// Update the modal title
+			$('#modalText').text(alt);
+			$('#modalStatus').text(status);
+			
+			// Format the subjects list
+            var formattedSubjects = subjects.split('-').join('<br>-');
+            $('#modalList').html(formattedSubjects);
+
+			// Update the modal image
+			$('#modalImage').attr('src', src);
+			$('#modalImage').attr('alt', alt);
+
+			// Show the modal
+			$('#staffModal').modal('show');
+		});
+
+		$('#staffModal').on('shown.bs.modal', function () {
+			// Set the width of the modal text to match the image width
+			var imgWidth = document.getElementById("modalImage").scrollWidth;
+			$(".modal-foot").css("width", imgWidth + "px");
+		});
+
+		$('#staffModal').on('hidden.bs.modal', function () {
+			$('#modalImage').attr('src', '');
+		});
+	});
 
 	
 }(jQuery));

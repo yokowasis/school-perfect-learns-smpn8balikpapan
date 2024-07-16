@@ -1,62 +1,43 @@
 title: SMP Negeri 8 Balikpapan
-author: Admin
 name: smpn8balikpapan
-email: smpn8@smpn8balikpapan.sch.id
 # baseurl: "/smpn8balikpapan"
-
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  SMPN 8 adalah sekolah Menengah Pertama yang menjadi sekolah Adiwiyata Mandiri
-  dan Sekolah Penggerak, 
-  dilengkapi dengan tenaga pendidik berpengalaman dan 
-  metode pembelajaran inovatif.
-
-sambutan: >
-  Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, berprestasi, berbudaya dan cinta lingkungan
-  Kami sangat berkomitmen untuk memberikan pendidikan terbaik bagi para siswa kami dengan 
-  fasilitas yang memadai dan tenaga pendidik yang berpengalaman. Kami percaya bahwa setiap 
-  siswa memiliki potensi yang luar biasa dan kami akan terus bekerja keras untuk membantu mereka 
-  mengejar mimpi mereka. Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja 
-  sama untuk membangun masa depan yang lebih baik bagi generasi muda.
-
-profil-sekolah: >
-  SMP Negeri 8 Balikpapan adalah sekolah menengah pertama berakreditasi A dan
-  menerapkan Kurikulum Merdeka dalam pembelajarannya. Serta merupakan sekolah
-  Adiwiyata Mandiri dan Sekolah Penggerak yang terletak di Jl. Mulawarman No.14, RT.54,
-  Manggar, Kec. Balikpapan Timur, Kota Balikpapan. SMP Negeri 8 Balikpapan berkomitmen
-  untuk menciptakan lingkungan pendidikan yang baik dan nyaman bagi siswa dengan
-  berbagai fasilitas serta kegiatan yang dapat menunjang kegiatan belajar dan mengajar. Kami
-  berharap siswa dapat tumbuh menjadi pribadi yang terus berkembang setiap harinya dengan
-  didampingi oleh tenaga pendidik yang berpengalaman.
-
-fasilitas: >
-  Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
-  dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
-  membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
-  Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
-  yang luas untuk digunakan sebagai sarana pengembangan diri. Berikut kami beberapa daftar
-
-ekstrakurikuler: >
-  Di sekolah kami, akademik bukanlah satu-satunya hal yang dapat dipelajari,
-  terdapat berbagai kegiatan ekstrakurikuler yang dapat diikuti oleh para siswa untuk
-  mengembangkan bakat dan minat mereka di luar jam pelajaran. Mulai dari kegiatan yang
-  dapat meningkatkan keterampilan fisik dan sportivitas, kegiatan di bidang seni dan
-  budaya, serta kegiatan yang berfokus pada kepemimpinan dan kemanusiaan. Setiap
-  kegiatan dirancang untuk mengembangkan bakat, membangun karakter disiplin, kerja
-  sama tim, dan memberikan kesempatan kepada siswa untuk belajar dan berkembang
-  dalam lingkungan yang positif dan mendukung.
-
-
-logo: /images/logobg.png
-logo-2: /images/smpn8_new-foto/new-logo.png
-logofooter: /images/logobg4.png
-icon: /images/logobg.png
 
 alamat: Jl. Mulawarman Rt.54 No 14 Manggar Balikpapan Timur
 email: smpn8@smpn8balikpapan.sch.id
 phone: "(0542) 761902"
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
 
+socmed:
+  - title: Instagram
+    link: "https://www.instagram.com/smpnegeri8balikpapan"
+    icon: "fab fa-instagram"
+  - title: Facebook
+    link: "https://id-id.facebook.com/"
+    icon: "fab fa-facebook-f"
+  - title: Youtube
+    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
+    icon: "fab fa-youtube"
+  - title: Whatsapp
+    link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
+    icon: "fab fa-whatsapp"
+
+#-----------------------------------Navbar----------------------#
+logo-navbar: /images/smpn8_new-foto/new-logo.png
+icon: /images/logobg.png
+#-----------------------------------End-Navbar----------------------#
+
+
+#----------------------------------Footer----------------------#
+logo-footer: /images/smpn8_new-foto/new-logo.png
+description-footer: >
+  SMPN 8 adalah sekolah Menengah Pertama yang menjadi sekolah 
+  Adiwiyata Mandiri dan Sekolah Penggerak, dilengkapi dengan 
+  tenaga pendidik berpengalaman dan metode pembelajaran inovatif.
+#-----------------------------------End-Footer----------------------#
+
+
+#----------------------------------Navbar_Menu_Link----------#
 menus:
   - title: Beranda
     link: /
@@ -66,11 +47,13 @@ menus:
       - title: Tentang Sekolah
         link: /pages/profil-sekolah
       - title: Sekolah Penggerak
-        link: /pages/sekolah-penggerak
-      - title: Sekolah Adiwiyata
-        link: /pages/sekolah-adiwiyata
-      - title: Staff & Karyawan
+        link: /pages/profil-sekolah-penggerak
+      - title: Adiwiyata Mandiri
+        link: /pages/profil-adiwiyata-mandiri
+      - title: Guru
         link: /pages/profil-guru
+      - title: Staff
+        link: /pages/profil-staff
   - title: Berita
     link: /pages/berita
   - title: Pengumuman
@@ -87,21 +70,11 @@ menus:
   - title: Galeri
     link: /pages/galeri
 
-submenu:
-  - title: Instagram
-    link: "https://www.instagram.com/smpnegeri8balikpapan"
-    icon: "fab fa-instagram"
-  - title: Facebook
-    link: "https://id-id.facebook.com/"
-    icon: "fab fa-facebook-f"
-  - title: Youtube
-    link: "https://www.youtube.com/@smpnegeri8balikpapan546"
-    icon: "fab fa-youtube"
-  - title: Whatsapp
-    link: "https://web.whatsapp.com/%F0%9F%8C%90/id"
-    icon: "fab fa-whatsapp"
+#----------------------------------End-Navbar_Menu_Link----------#
 
 
+
+#----------------------------------Halaman_Beranda----------#
 sliders:
   - title: SMP Negeri 8 Balikpapan
     text: Selamat Datang di
@@ -114,15 +87,202 @@ sliders:
     link: /pages/berita
     linktext: Berita Terkini
 
+three-services:
+  - logo: fas fa-laptop
+    title: Fasilitas
+    image: /images/pelatihan3.jpg
+    link: /pages/fasilitas
+    text: >
+      Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
+      dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
+      membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
+      Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
+      yang luas untuk digunakan sebagai sarana pengembangan diri.
+  - logo: fas fa-school
+    title: Tentang Kami
+    image: /images/AulaSmpn8.jpg
+    link: /pages/profil-sekolah
+    text: >
+      SMP Negeri 8 Balikpapan adalah sekolah menengah pertama berakreditasi A dan
+      menerapkan Kurikulum Merdeka dalam pembelajarannya. Serta merupakan sekolah
+      Adiwiyata Mandiri dan Sekolah Penggerak yang terletak di Jl. Mulawarman No.14, RT.54,
+      Manggar, Kec. Balikpapan Timur, Kota Balikpapan. SMP Negeri 8 Balikpapan berkomitmen
+      untuk menciptakan lingkungan pendidikan yang baik dan nyaman bagi siswa dengan
+      berbagai fasilitas serta kegiatan yang dapat menunjang kegiatan belajar dan mengajar. Kami
+      berharap siswa dapat tumbuh menjadi pribadi yang terus berkembang setiap harinya dengan
+      didampingi oleh tenaga pendidik yang berpengalaman.
+  - logo: fas fa-campground
+    title: Ekstrakurikler
+    image: /images/AulaSmpn8.jpg
+    link: /pages/ekstrakurikuler
+    text: >
+      Di sekolah kami, akademik bukanlah satu-satunya hal yang dapat dipelajari,
+      terdapat berbagai kegiatan ekstrakurikuler yang dapat diikuti oleh para siswa untuk
+      mengembangkan bakat dan minat mereka di luar jam pelajaran. Mulai dari kegiatan yang
+      dapat meningkatkan keterampilan fisik dan sportivitas, kegiatan di bidang seni dan
+      budaya, serta kegiatan yang berfokus pada kepemimpinan dan kemanusiaan. Setiap
+      kegiatan dirancang untuk mengembangkan bakat, membangun karakter disiplin, kerja
+      sama tim, dan memberikan kesempatan kepada siswa untuk belajar dan berkembang
+      dalam lingkungan yang positif dan mendukung.
+
+#foto dan nama kepala sekolah
+nama-kepala-sekolah: Mugiyatno, S.Pd., M. M
+foto-kepala-sekolah: /images/kepsek.jpeg
+
+#video sekolah
+link-video: "https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+thumbnail-video: /images/LobySmpn8_2.jpg
+title-video: Video Lingkungan SMPN 8 Balikpapan
+
+description-video: >
+  Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
+  berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
+  terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
+  Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja sama untuk membangun masa 
+  depan yang lebih baik bagi generasi muda.
+#----------------------------------End-Halaman_Beranda----------#
+
+
+#----------------------------------Halaman_Galeri----------#
 galleries:
-  - title: Foto 1
-    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
-  - title: Foto 2
-    img: gallery/suasana_kantor.jpeg
-  - title: Foto 3
-    img: gallery/WhatsApp%20Image%202023-02-15%20at%2010.20.19.jpeg
-  - title: Foto 4
-    img: gallery/foto (4).jpeg
+  - title: Loby SMPN 8
+    img: /images/LobySmpn8.jpg
+
+  - title: Ikrar Anti Perundungan
+    img: /images/smpn8_new-foto/ikrar-anti-perundungan.jpg
+
+  - title: Pelatihan Desain UI/UX oleh Mahasiswa ITK
+    img: /images/pelatihan3.jpg
+
+  - title: Pelaksanaan RAKERNAS APEKSI ke-XVII
+    img: /images/galeri/Pelaksanaan RAKERNAS APEKSI ke-XVII.jpg
+
+  - title: Tim SMPN 8 juara 1 Trofeo dan juara 2 Turnamen Futsal
+    img: /images/galeri/Tim SMPN 8 juara 1 Trofeo dan juara 2 Turnamen Futsal.jpg
+
+  - title: Projek Penguatan Profil Pelajar Pancasila
+    img: /images/galeri/Projek Penguatan Profil Pelajar Pancasila.jpg
+    
+  - title: PII Project Leadership Basic Training 2023
+    img: /images/smpn8_new-foto/event_project-leadership-training.jpg
+#----------------------------------End-Halaman_Galeri----------#
+
+
+
+#----------------------------------Halaman_Staff----------#
+employees-staff:
+  - status: Satpam
+    name: Maverick, S.Pd.T.
+    img: /images/guru-staff/example.jpg
+    subjects: -Menjaga Keamanan Sekolah
+
+  - status: Tata Usaha
+    name: Razor, S.Pd.T.
+    img: /images/guru-staff/example.jpg
+    subjects: -Mengelola Administrasi
+
+  - status: Penjaga Perpustakaan
+    name: Vandal, S.Pd.T.
+    img: /images/guru-staff/example.jpg
+    subjects: -Menjaga Perpustakaan
+
+#----------------------------------End-Halaman_Staff----------#
+
+#----------------------------------Halaman_Guru----------#
+employees-guru:
+  - title: Matematika
+    guru:
+      - status: Guru
+        name: Ansel, S.Pd.T.
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika-Bahasa Inggris-Bahasa Indonesia
+      - status: Guru
+        name: Bagas1, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -BK-IPA-Matematika
+      - status: Guru
+        name: Bagas2, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika
+      - status: Guru
+        name: Bagas3, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika
+      - status: Guru
+        name: Bagas4, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika
+      - status: Guru
+        name: Bagas5, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika
+      - status: Guru
+        name: Bagas6, S.Kom, M.Kom
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika
+  - title: Bahasa Indonesia
+    guru:
+      - status: Guru
+        name: Ansel, S.Pd.T.
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika-Bahasa Inggris-Bahasa Indonesia
+      - status: Guru
+        name: Raisha, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -Bahasa Indonesia-IPS
+  - title: IPA
+    guru:
+      - status: Guru
+        name: Dr. Putu, M.Pd.I
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA-Agama Islam
+      - status: Guru
+        name:  Raisha0, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA
+      - status: Guru
+        name:  Raisha1, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA
+      - status: Guru
+        name:  Raisha2, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA
+      - status: Guru
+        name:  Raisha3, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA
+  - title: Agama Islam
+    guru:
+      - status: Guru
+        name: Haqi, S.Pd.M.
+        img: /images/guru-staff/example.jpg
+        subjects: -Agama Islam-IPS
+      - status: Guru
+        name: Dr. Putu, M.Pd.I
+        img: /images/guru-staff/example.jpg
+        subjects: -IPA-Agama Islam
+  - title: IPS
+    guru:
+      - status: Guru
+        name: Haqi, S.Pd.M.
+        img: /images/guru-staff/example.jpg
+        subjects: -Agama Islam-IPS
+      - status: Guru
+        name: Raisha, S.Pd.ML
+        img: /images/guru-staff/example.jpg
+        subjects: -Bahasa Indonesia-IPS
+  - title: Bahasa Inggris
+    guru:
+      - status: Guru
+        name: Ansel, S.Pd.T.
+        img: /images/guru-staff/example.jpg
+        subjects: -Matematika-Bahasa Inggris-Bahasa Indonesia
+#----------------------------------End-Halaman_Guru----------#
+
+
+
+
 
 # Collections
 # collections:
@@ -152,7 +312,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
 
-copyright: © copyright 2023 smpn8balikpapan
 
 # Theme-specific settings
 

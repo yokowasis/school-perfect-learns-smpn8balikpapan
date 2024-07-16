@@ -6,67 +6,29 @@
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <div class="mu-service-area">
+          {% for service in site.three-services %}
           <!-- Start single service -->
           <div class="mu-service-single">
             <div class="service-title">
               <div class="d-md-inline-flex">
-                <div><i class="fas fa-laptop"></i></div>
-                <h3>Fasilitas</h3>
+                <div><i class="{{service.logo}}"></i></div>
+                <h3>{{service.title}}</h3>
               </div>
             </div>
             <div class="">
               <img
-                src="{{ site.baseurl }}/images/pelatihan3.jpg"
+                src="{{ site.baseurl }}{{service.image}}"
                 class="card-image"
                 alt=""
               />
             </div>
             <div class="service-text">
-              <p>{{ site.fasilitas }}</p>
-              <a href="{{ site.baseurl }}/pages/fasilitas" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
+              <p>{{ service.text }}</p>
+              <a href="{{ site.baseurl }}{{service.link}}" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
               <!-- <a href="#" class="btn btn-primary btn-service rounded-pill text-white">Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></a> -->
             </div>
           </div>
-          <!-- Start single service -->
-          <div class="mu-service-single">
-            <div class="service-title">
-              <div class="d-md-inline-flex">
-                <div><i class="fas fa-school"></i></div>
-                <h3>Tentang Kami</h3>
-              </div>
-            </div>
-            <div class="">
-              <img
-                src="{{ site.baseurl }}/images/AulaSmpn8.jpg"
-                class="card-image"
-                alt=""
-              />
-            </div>
-            <div class="service-text">
-              <p>{{ site.profil-sekolah }}</p>
-              <a href="{{ site.baseurl }}/pages/profil-sekolah" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
-            </div>
-          </div>
-          <!-- Start single service -->
-          <div class="mu-service-single">
-            <div class="service-title">
-              <div class="d-md-inline-flex">
-                <div><i class="fas fa-campground"></i></div>
-                <h3>Ekstrakurikler</h3>
-              </div>
-            </div>
-            <div class="">
-              <img
-                src="{{ site.baseurl }}/images/smpn8_new-foto/ekstra-basket.jpg"
-                class="card-image"
-                alt=""
-              />
-            </div>
-            <div class="service-text">
-              <p>{{ site.ekstrakurikuler }}</p>
-              <a href="{{ site.baseurl }}/pages/ekstrakurikuler" class=""><h5>Selengkapnya<i class="fas fa-long-arrow-alt-right"></i></h5></a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -84,7 +46,7 @@
             <div class="col-lg-5 col-md-5">
               <div class="video h-100">
                 <img
-                  src="{{ site.baseurl }}/images/LobySmpn8_2.jpg"
+                  src="{{ site.baseurl }}{{ site.thumbnail-video }}"
                   class="img-fluid rounded w-100 h-100"
                   style="object-fit: cover"
                   alt=""
@@ -93,7 +55,7 @@
                   type="button"
                   class="btn btn-play"
                   data-bs-toggle="modal"
-                  data-src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+                  data-src={{site.link-video}}
                   data-bs-target="#videoModal"
                 >
                   <span></span>
@@ -104,11 +66,7 @@
               <div class="d-flex flex-column h-100">
                 <div class="mb-4">
                   <p class="mb-0 video1-text">
-                    Selamat datang di website SMPN 8 Balikpapan, sekolah yang memiliki visi Beriman dan bertaqwa, 
-                    berprestasi, berbudaya dan cinta lingkungan Kami sangat berkomitmen untuk memberikan pendidikan 
-                    terbaik bagi para siswa kami dengan fasilitas yang memadai dan tenaga pendidik yang berpengalaman. 
-                    Terima kasih sudah mengunjungi website kami dan kami berharap dapat bekerja sama untuk membangun masa 
-                    depan yang lebih baik bagi generasi muda.
+                    {{site.description-video}}
                   </p>
                 </div>
               </div>
@@ -121,14 +79,14 @@
           <div class="team-item rounded">
             <div class="team-img rounded-top">
               <img
-                src="{{ site.baseurl }}/images/kepsek.jpeg"
+                src="{{ site.baseurl }}{{site.foto-kepala-sekolah}}"
                 class="img-fluid rounded-top w-100"
                 alt=""
               />
             </div>
             <div class="team-content text-white text-center border border-top-0 rounded-bottom p-1 bg-secondarymain">
               <h5 class="text-white poppins-normal pb-0">Kepala Sekolah</h5>
-              <p class="mb-0 text-white poppins-bold">Mugiyatno, S.Pd., M. M</p>
+              <p class="mb-0 text-white poppins-bold">{{site.nama-kepala-sekolah}}</p>
             </div>
           </div>
       </div>
@@ -146,7 +104,7 @@
   <div class="modal-dialog">
     <div class="modal-content rounded-0">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Video Lingkungan SMPN 8 Balikpapan</h5>
+        <h5 class="modal-title poppins-bold pb-0" id="exampleModalLabel">{{site.title-video}}</h5>
         <button
           type="button"
           class="btn-close"
@@ -160,7 +118,7 @@
           <!-- <iframe  id="video" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
           <iframe
           class="embed-responsive-item"
-          src="https://www.youtube.com/embed/brwgT-GvUKQ?si=nDoh9mU37gwWL9BK"
+          src={{site.link-video}}
           id="video"
           allowfullscreen
           allowscriptaccess=""
@@ -249,59 +207,43 @@
   </div>
 </div>
 
-<!------------------------------------------------------------------------- section -->
-<!-- <div class="section layout_padding padding_bottom-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="full">
-          <div class="heading_main text_align_center">
-            <h2><span>News</span></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          ---The slideshow
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                {% assign i = 0 %}
-                {% for post in site.posts limit:12 %}
-                  {% assign i = i | plus: 1 %}
-                  <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="full blog_img_popular">
-                      <img class="img-responsive" src="{{ post.img }}" alt="#" />
-                      <p><a href="{{ post.url | relative_url }}">{{ post.title }}-{{i | modulo:1}}</a></p>
-                    </div>
-                  </div>
-                  ---if i mod 4 = 0
-                  {% assign temp = i | modulo:4 %}
-                  {% if  temp == 0 %}
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          ---Left and right controls
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-      </div>
+
+<!------------------------------------------------------------------------- GALERI -->
+<div class="container mt-2 mb-5 pb-5">
+  <div class="section-title mb-4 wow fadeIn" data-wow-delay="0.2s">
+    <div class="sub-style">
+      <h4 class="sub-title px-3 mb-0 fs-4 poppins-bolder">Galeri</h4>
     </div>
   </div>
-</div> -->
-<!-- end section -->
+  <div class="row justify-content-center gallery">
+      {% for gallery in site.galleries limit:4 %}
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <img src="{{site.baseurl}}{{gallery.img}}" alt="{{gallery.title}}" class="img-fluid rounded-1 wow fadeIn" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="{{site.baseurl}}{{gallery.img}}" data-wow-delay="0.2s">
+      </div>
+      {% endfor %}
+      <div class="modal justify-content-center" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content fadeIn">
+                  <div class="modal-head">
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body rounded-2">
+                      <img id="modalImage" src="" alt="" class="rounded-2">
+                  </div>
+                  <div class="modal-foot">
+                      <p id="modalText" class="poppins-normal"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <a class="btn btn-primary rounded-pill text-white px-4" href="{{site.baseurl}}/pages/galeri" style="font-size: 13px;"
+            >Selengkapnya
+    </a>
+  </div>
+</div>
+<!------------------------------------------------------------------------- section -->
 
 <!-- section -->
 <!-- <div class="section layout_padding theme_bg">

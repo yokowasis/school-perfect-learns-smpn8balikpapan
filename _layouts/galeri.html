@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="container my-5">
+    <h1 class="text-center">{{ page.title | escape }}</h1>
+    <div class="row justify-content-center gallery">
+        {% for gallery in site.galleries %}
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <img src="{{site.baseurl}}{{gallery.img}}" alt="{{gallery.title}}" class="img-fluid rounded-1 wow fadeIn" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="{{site.baseurl}}{{gallery.img}}" data-wow-delay="0.2s">
+        </div>
+        {% endfor %}
+        <div class="modal justify-content-center" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content fadeIn">
+                    <div class="modal-head">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body rounded-2">
+                        <img id="modalImage" src="" alt="" class="rounded-2">
+                    </div>
+                    <div class="modal-foot">
+                        <p id="modalText" class="poppins-normal"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

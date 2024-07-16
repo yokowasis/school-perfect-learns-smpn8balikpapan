@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Profil Staf
+layout: profil-guru
+title: Profil Guru
 ---
 
 Hello World

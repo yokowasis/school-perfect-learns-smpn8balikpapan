@@ -3,6 +3,12 @@ layout: fasilitas
 title: Fasilitas
 ---
 
+Kami menawarkan fasilitas terbaik untuk mendukung kenyamanan dalam belajar
+dan mengajar. Kami memiliki ruang kelas yang baik, tersedia Chromebook untuk
+membantu siswa dalam mengakses teknologi, terdapat laboratorium fisika yang lengkap,
+Smart TV untuk memberikan komunikasi yang informatif dan kreatif, serta lapangan
+yang luas untuk digunakan sebagai sarana pengembangan diri.
+
 Berikut Fasilitas yang ada di Sekolah kami:
 
 | No. | Tempat Utama                         | No. | Tempat Lainnya                           |
@@ -17,6 +23,6 @@ Berikut Fasilitas yang ada di Sekolah kami:
 | 8   | R. Kepsek                            | 21  | Taman                                    |
 | 9   | Toilet                               | 22  | Lapangan Bola Belakang                   |
 | 10  | R. Pertemuan                         | 23  | Kantin                                   |
-| 11  | Lab. IPA                             | 24  | Ruang Sebat                              |
+| 11  | Lab. IPA                             |     |                                          |
 | 12  | Koperasi                             |     |                                          |
 | 13  | Kelas                                |     |    

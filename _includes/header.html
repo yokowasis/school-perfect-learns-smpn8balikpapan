@@ -18,7 +18,7 @@
       </div>
       <div class="col-4 text-center text-lg-end" id="responsv-topbar1">
         <ul class="d-flex align-items-center justify-content-end">
-          {% for menu in site.submenu %}
+          {% for menu in site.socmed %}
             <li>
               <a href="{{menu.link}}" class="btn btn-light btn-square border rounded-circle nav-fill me-3">
                 <i class="{{menu.icon}}"></i>
@@ -63,7 +63,7 @@
   >
     <a href="{{site.baseurl}}/" class="navbar-brand p-0">
       <h1 class="text-primary m-0 p-0">
-        <img src="{{ site.baseurl }}{{ site.logo-2 }}" id="navbar-logo" alt="logo" style="height: 70px;">
+        <img src="{{ site.baseurl }}{{ site.logo-navbar }}" id="navbar-logo" alt="logo" style="height: 70px;">
       </h1>
       <!-- <img src="img/logo.png" alt="Logo"> -->
     </a>
