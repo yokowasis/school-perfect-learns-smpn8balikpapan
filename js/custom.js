@@ -1,10 +1,23 @@
 (function ($) {
     "use strict";
 	
-	$("a[href*='#']").click(function() {
+	$(".navbar a[href*='#']").click(function(e) {
 		$.get("#");
+		e.preventDefault()
 		return false; // prevent default browser refresh on "#" link
 	});
+	$(".dropdown > a[href*='#']").click(function(e) {
+		$.get("#");
+		e.preventDefault()
+		return false; // prevent default browser refresh on "#" link
+	});
+	$(".dropdown ul li a[href*='#']").click(function(e) {
+		$.get("#");
+		e.preventDefault()
+	});
+	// $("a[href*='#']").click(function(e) {
+	// 	e.preventDefault()
+	// });
 		
 	// $("a.counter").click(function()
     // {

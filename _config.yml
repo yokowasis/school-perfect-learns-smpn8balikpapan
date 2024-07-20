@@ -279,6 +279,74 @@ employees-guru:
 #----------------------------------End-Halaman_Guru----------#
 
 
+#----------------------------------SEKOLAH PENGGERAK----------#
+sekolah-penggerak: 
+  - nama-kegiatan: Project 1
+    posts:
+      - tahun: 2022
+        deskripsi: lorem ipsum dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/ex-1.jpg
+         - image: /images/ex-2.jpg
+         - image: /images/img2.png
+      - tahun: 2023
+        deskripsi: lorem ipsum dolor fans meweing sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/img2.png
+         - image: /images/img6.png
+         - image: /images/img7.png
+      - tahun: 2024
+        deskripsi: lorem ipsum skidibid toilet dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/ex-2.jpg
+         - image: /images/ex-1.jpg
+         - image: /images/img6.png
+
+  - nama-kegiatan: Project 2
+    posts:
+      - tahun: 2022
+        deskripsi: lorem ipsum dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/carousel-1.jpg
+         - image: /images/ex-2.jpg
+         - image: /images/img2.png
+      - tahun: 2023
+        deskripsi: lorem ipsum dolor fans meweing sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/img2.png
+         - image: /images/img6.png
+         - image: /images/img7.png
+      - tahun: 2024
+        deskripsi: lorem ipsum skidibid toilet dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/ex-2.jpg
+         - image: /images/ex-1.jpg
+         - image: /images/img6.png
+
+  - nama-kegiatan: Project 3
+    posts:
+      - tahun: 2022
+        deskripsi: lorem ipsum dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/ex-1.jpg
+         - image: /images/ex-2.jpg
+         - image: /images/img2.png
+      - tahun: 2023
+        deskripsi: lorem ipsum dolor fans meweing sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/img2.png
+         - image: /images/img6.png
+         - image: /images/img7.png
+      - tahun: 2024
+        deskripsi: lorem ipsum skidibid toilet dolor sit ammte cons quen or ? ont en fave dot musl
+        images:
+         - image: /images/ex-2.jpg
+         - image: /images/ex-1.jpg
+         - image: /images/img6.png
+
+
+#----------------------------------END SEKOLAH PENGGERAK----------#
+
 
 
 
