@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="archive">
+  <div>
+    <div>
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    </div>
+    <p class="text-justify mb-5">
+        Sekolah Adiwiyata adalah sekolah yang menerapkan hidup peduli lingkungan. Sekolah Adiwiyata bertujuan 
+        menyadarkan warga sekolah akan lingkungan sehingga dapat turut bertanggung jawab dalam penyelamatan lingkungan. 
+        Di samping itu, sekolah Adiwiyata juga menciptakan kondisi yang baik bagi sekolah sebagai tempat kegiatan pembelajaran.
+    </p>
+  </div>
+  <ul class="posts">
+    <div class="row g-4 justify-content-center">
+    {% assign adiwiyata_posts = site.categories.Adiwiyata %}
+    {% for post in adiwiyata_posts %}
+      <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s" id="news-container">
+        <a href="{{ post.url | relative_url }}" class="hovered-content rounded">
+            <div class="rounded-top news-img">
+              <div class="hover-image rounded-top" ><div class="btn-square border-i-news rounded-circle me-3"><i class="fas fa-greater-than"></i></div></div>
+              <img src="{{ post.img | relative_url}}" class="rounded-top" alt="">
+            </div>
+            <div class="post-content rounded-bottom p-4">
+                <p class="mb-2 poppins-bold news-title">{{ post.title }}</p>
+                <div class="separator"></div>
+                <!-- <span class="date-news-post"><i class="far fa-calendar-alt"></i>{{post.date | date: "%Y-%m-%d"}}</span> -->
+                <div class="news-text-content">
+                  {{ post.excerpt }}
+                </div>
+            </div>
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </ul>
+</div>
+
+<style>
+  .archive .excerpt p {
+    font-size: .9em;
+    line-height: 1.3em;
+  }
+  .archive .title {
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 1.3em;
+  }
+</style>
