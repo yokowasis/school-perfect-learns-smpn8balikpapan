@@ -69,7 +69,9 @@ menus:
         link: /pages/fasilitas
   - title: Galeri
     link: /pages/galeri
+
 #----------------------------------End-Navbar_Menu_Link----------#
+
 
 
 #----------------------------------Halaman_Beranda----------#
