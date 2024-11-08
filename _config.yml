@@ -46,6 +46,8 @@ menus:
     submenus: 
       - title: Tentang Sekolah
         link: /pages/profil-sekolah
+      - title: Sekolah Rujukan Google
+        link: /pages/profil-sekolah-rujukan-google
       - title: Sekolah Penggerak
         link: /pages/profil-sekolah-penggerak
       - title: Adiwiyata Mandiri
